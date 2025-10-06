@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Garantir background branco global */
+* {
+    @apply bg-white;
+}
+
+html, body {
+    @apply bg-white text-gray-900;
+}
+
+.custom-screen {
+    @apply max-w-screen-xl mx-auto px-4 md:px-8;
+}
+
+.custom-btn-bg {
+    @apply bg-primary-800 hover:bg-primary-700 text-white;
+}
+
+.custom-btn-bg:hover {
+    @apply bg-primary-700;
+}
