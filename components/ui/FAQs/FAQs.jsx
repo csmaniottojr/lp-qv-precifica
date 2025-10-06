@@ -45,7 +45,7 @@ const FaqsCard = (props) => {
     )
 }
 
-export default () => {
+const FAQs = () => {
 
     const faqsList = [
         {
@@ -109,3 +109,5 @@ export default () => {
         </section>
     )
 }
+
+export default FAQs

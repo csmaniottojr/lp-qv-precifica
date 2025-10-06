@@ -1,4 +1,4 @@
-export default () => {
+const Dores = () => {
 
     const features = [
         {
@@ -62,3 +62,5 @@ export default () => {
         </section>
     )
 }
+
+export default Dores

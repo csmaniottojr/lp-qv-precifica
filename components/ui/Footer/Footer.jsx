@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 const Footer = () => {
 
     const footerNavs = [
@@ -31,7 +33,7 @@ const Footer = () => {
     return (
         <footer className="text-gray-600 bg-white px-4 py-5 max-w-screen-xl mx-auto md:px-8 border-t border-gray-200">
             <div className="max-w-lg sm:mx-auto sm:text-center">
-                <img src="https://www.floatui.com/logo.svg" className="w-32 sm:mx-auto" />
+                <Image src="https://www.floatui.com/logo.svg" alt="Float UI Logo" width={128} height={32} className="w-32 sm:mx-auto" />
                 <p className="leading-relaxed mt-2 text-[15px] text-gray-600">
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 </p>
