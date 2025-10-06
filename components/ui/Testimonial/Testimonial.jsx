@@ -50,7 +50,7 @@ const Testimonial = () => {
     ]
 
     return (
-        <SectionWrapper className="bg-gray-50 py-16">
+        <SectionWrapper className="py-16">
             <div id="testimonials" className="custom-screen text-gray-600">
                 <div className="max-w-3xl text-center mx-auto mb-12">
                     <div className="inline-block px-4 py-2 bg-primary-100 text-primary-800 rounded-full text-sm font-semibold mb-6">
@@ -77,8 +77,8 @@ const Testimonial = () => {
                                     <li key={idx} className="group relative p-8 rounded-2xl border-2 border-gray-200 bg-white hover:border-primary-300 hover:shadow-2xl transition-all duration-300">
                                         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary-400 to-primary-600 rounded-t-2xl"></div>
                                         <figure className="flex flex-col justify-between gap-y-6 h-full">
-                                            <blockquote className="relative">
-                                                <svg className="absolute -top-2 -left-2 w-8 h-8 text-primary-200" fill="currentColor" viewBox="0 0 32 32">
+                                            <blockquote className="relative pl-8">
+                                                <svg className="absolute -top-2 left-0 w-8 h-8 text-primary-200" fill="currentColor" viewBox="0 0 32 32">
                                                     <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
                                                 </svg>
                                                 <p className="text-gray-700 leading-relaxed relative z-10">

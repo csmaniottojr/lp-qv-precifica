@@ -53,26 +53,11 @@ const Features = () => {
             title: "Atualização Automática",
             desc: "Mudou um custo? Sistema recalcula tudo automaticamente. Atualização em cascata de todos os procedimentos, sem trabalho manual."
         },
-        {
-            icon:
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
-                </svg>,
-            title: "Análise de Viabilidade",
-            desc: "Ranking de rentabilidade por procedimento. Identifique quais dão lucro vs prejuízo. Base para decisões estratégicas."
-        },
-        {
-            icon:
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
-                </svg>,
-            title: "Acesso Web Responsivo",
-            desc: "100% online, qualquer dispositivo. Dados seguros na nuvem com sincronização em tempo real."
-        },
+
     ]
 
     return (
-        <SectionWrapper className="bg-gray-50 py-16">
+        <SectionWrapper className="py-16">
             <div id="features" className="custom-screen text-gray-600">
                 <LayoutEffect
                     className="duration-1000 delay-300"
@@ -98,10 +83,10 @@ const Features = () => {
                     }}
                 >
                     <div className="relative mt-10">
-                        <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                        <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                             {
                                 featuresList.map((item, idx) => (
-                                    <li key={idx} className="group relative space-y-4 p-6 rounded-2xl border-2 border-gray-200 bg-white hover:border-primary-300 hover:shadow-xl transition-all duration-300">
+                                    <li key={idx} className="group relative space-y-4 p-6 rounded-2xl border-2 border-gray-200 hover:border-primary-300 hover:shadow-xl transition-all duration-300">
                                         <div className="absolute top-0 right-0 w-20 h-20 bg-primary-100 rounded-full blur-2xl opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
                                         <div className="relative w-14 h-14 flex items-center justify-center bg-gradient-to-br from-primary-100 to-primary-200 rounded-xl text-primary-800 group-hover:scale-110 transition-transform duration-300">
                                             {item.icon}
