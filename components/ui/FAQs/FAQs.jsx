@@ -24,7 +24,7 @@ const FaqsCard = (props) => {
             }`}>
                 {faqsList.q}
                 <div className={`ml-4 flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full transition-all duration-300 ${
-                    state ? 'bg-primary-100 text-primary-800 rotate-180' : 'bg-gray-100 text-gray-600'
+                    state ? 'bg-transparent text-primary-800 rotate-180' : 'bg-transparent text-gray-600'
                 }`}>
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
@@ -79,7 +79,7 @@ export default () => {
     ]
   
     return (
-        <section className="leading-relaxed max-w-screen-xl mx-auto px-4 md:px-8 bg-gray-50 py-16">
+        <section className="leading-relaxed max-w-screen-xl mx-auto px-4 md:px-8 bg-white py-16">
             <div className="space-y-4 text-center mb-12">
                 <div className="inline-block px-4 py-2 bg-primary-100 text-primary-800 rounded-full text-sm font-semibold mb-4">
                     FAQ
