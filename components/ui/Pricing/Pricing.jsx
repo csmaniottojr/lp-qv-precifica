@@ -8,43 +8,43 @@ const Pricing = () => {
 
     const plans = [
         {
-            name: "Basic plan",
-            price: 12,
+            name: "Prata",
+            price: 97,
             features: [
-                "Curabitur faucibus",
-                "massa ut pretium maximus",
-                "Sed posuere nisi",
-                "Pellentesque eu nibh et neque",
-                "Suspendisse a leo",
-                "Praesent quis venenatis ipsum",
-                "Duis non diam vel tortor",
-
+                "Cadastro de Custos Fixos e Variáveis",
+                "Cálculo Automático de Hora Clínica",
+                "Configuração de Margens de Lucro",
+                "Simulador Atual vs Ideal",
+                "Procedimentos Ilimitados",
+                "Atualização Automática em Cascata",
+                "Análise de Viabilidade por Procedimento",
+                "Acesso Web Responsivo",
             ],
         },
         {
-            name: "Startup",
-            price: 35,
+            name: "Ouro",
+            price: 197,
             features: [
-                "Curabitur faucibus",
-                "massa ut pretium maximus",
-                "Sed posuere nisi",
-                "Pellentesque eu nibh et neque",
-                "Suspendisse a leo",
-                "Praesent quis venenatis ipsum",
-                "Duis non diam vel tortor",
+                "Todas as funcionalidades do Prata",
+                "Onboarding Personalizado 1:1",
+                "Sessão de Configuração Guiada",
+                "Suporte Prioritário",
+                "Materiais de Treinamento Exclusivos",
+                "Consultoria de Implementação",
+                "Templates de Precificação Prontos",
             ],
         },
         {
-            name: "Enterprise",
-            price: 60,
+            name: "Diamante",
+            price: null,
             features: [
-                "Curabitur faucibus",
-                "massa ut pretium maximus",
-                "Sed posuere nisi",
-                "Pellentesque eu nibh et neque",
-                "Suspendisse a leo",
-                "Praesent quis venenatis ipsum",
-                "Duis non diam vel tortor",
+                "Tudo do Plano Ouro",
+                "Para Redes de Clínicas (Multi-unidades)",
+                "Diagnóstico Personalizado de Saúde Financeira",
+                "Relatórios Consolidados por Unidade",
+                "Consultoria Estratégica Mensal",
+                "Análise Comparativa entre Unidades",
+                "Suporte Dedicado",
             ],
         },
     ];
@@ -54,11 +54,11 @@ const Pricing = () => {
             <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
                 <div className='relative max-w-xl mx-auto sm:text-center'>
                     <h3 className='text-gray-900 text-3xl font-semibold sm:text-4xl'>
-                        Pricing for all sizes
+                        Escolha o plano ideal para você
                     </h3>
                     <div className='mt-3 max-w-xl'>
                         <p className="text-gray-600">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur consequat nunc.
+                            Todas as funcionalidades de precificação estratégica. Escolha o nível de suporte que precisa.
                         </p>
                     </div>
                 </div>
@@ -95,11 +95,22 @@ const Pricing = () => {
                 <div className='mt-8 space-y-6 justify-center gap-6 sm:grid sm:grid-cols-2 sm:space-y-0 lg:grid-cols-3'>
                     {
                         plans.map((item, idx) => {
-                            const isMiddlePlan = idx === 1; // Startup plan
-                            const yearlyPrice = Math.round(item.price * 12 * 0.75); // 25% discount only for "Anual"
-                            const yearlyInstallmentsPrice = item.price * 12; // Full price for "Anual Parcelado"
-                            const displayPrice = billingType === "yearly" ? yearlyPrice : yearlyInstallmentsPrice;
-                            const billingPeriod = "/ano";
+                            const isMiddlePlan = idx === 1; // Ouro plan
+                            const isDiamondPlan = idx === 2; // Diamante plan
+                            
+                            let displayPrice, billingPeriod, savingsText;
+                            
+                            if (isDiamondPlan) {
+                                displayPrice = "Sob consulta";
+                                billingPeriod = "";
+                                savingsText = null;
+                            } else {
+                                const yearlyPrice = Math.round(item.price * 12 * 0.75); // 25% discount only for "Anual"
+                                const yearlyInstallmentsPrice = item.price * 12; // Full price for "Anual Parcelado"
+                                displayPrice = billingType === "yearly" ? `R$ ${yearlyPrice}` : `R$ ${yearlyInstallmentsPrice}`;
+                                billingPeriod = "/ano";
+                                savingsText = billingType === "yearly" ? `Economize R$ ${yearlyInstallmentsPrice - yearlyPrice}/ano` : null;
+                            }
                             
                             return (
                                 <div key={idx} className={`relative flex-1 flex items-stretch flex-col p-8 rounded-xl border-2 transition-all duration-300 ${
@@ -119,10 +130,10 @@ const Pricing = () => {
                                             {item.name}
                                         </span>
                                         <div className='mt-4 text-gray-900 text-3xl font-semibold'>
-                                            ${displayPrice} <span className="text-xl text-gray-600 font-normal">{billingPeriod}</span>
-                                            {billingType === "yearly" && (
+                                            {displayPrice} <span className="text-xl text-gray-600 font-normal">{billingPeriod}</span>
+                                            {savingsText && (
                                                 <div className="text-sm text-green-600 font-medium mt-1">
-                                                    Economize ${yearlyInstallmentsPrice - yearlyPrice}/ano
+                                                    {savingsText}
                                                 </div>
                                             )}
                                         </div>

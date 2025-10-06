@@ -13,39 +13,39 @@ const Testimonial = () => {
     const testimonials = [
         {
             avatar: user1,
-            name: "Mark Zuckerberg",
-            title: "Founder of meta",
-            quote: "we've been using Mailgo for almost a year now and have nothing but great things to say. It's super easy to set up campaigns and its reporting features are incredibly detailed."
+            name: "Dr. Marcelo Silva",
+            title: "Dentista - Clínica Odonto+",
+            quote: "Descobri que estava cobrando 30% abaixo do necessário em implantes. Em 2 meses ajustei os preços e aumentei a margem sem perder um único paciente. O simulador mostrou exatamente onde eu estava perdendo dinheiro."
         },
         {
             avatar: user2,
-            name: "Guillermo Rauch",
-            title: "Founder of Vercel",
-            quote: "Mailgo has been a great addition to our email marketing strategy. It's so user-friendly, yet powerful and effective. I'm able to quickly create beautiful emails."
+            name: "Dra. Juliana Costa",
+            title: "Médica Esteta - Harmonize Clinic",
+            quote: "Antes eu precificava copiando a concorrência. Agora sei exatamente quanto vale minha hora clínica e quanto preciso cobrar para ter margem saudável. Clareza financeira total."
         },
         {
             avatar: user3,
-            name: "Sidi jeddou",
-            title: "Founder of Float UI",
-            quote: "I highly recommend Mailgo for anyone looking for an easy-to-use and reliable email marketing tool! It's simple to use and has been a great help."
+            name: "Dr. Ricardo Mendes",
+            title: "Ortodontista - Sorriso Perfeito",
+            quote: "Economizo 15 horas por mês que gastava com planilhas. Mudou um custo? O sistema recalcula tudo automaticamente. Transformou minha gestão financeira."
         },
         {
             avatar: user4,
-            name: "Ghazbel",
-            title: "Founder of forceY",
-            quote: "I've been using Mailgo for the past few months and I'm extremely impressed. The user interface is very intuitive, and I love the automated features ."
+            name: "Dra. Fernanda Alves",
+            title: "Dermatologista - DermaVida",
+            quote: "O ranking de rentabilidade me mostrou que 3 procedimentos estavam dando prejuízo! Ajustei os preços e agora todos os atendimentos são lucrativos. Resultado imediato."
         },
         {
             avatar: user5,
-            name: "Ana khan",
-            title: "Founder of larax",
-            quote: "Mailgo is the best email marketing tool I've ever used. It's incredibly simple and intuitive to use, yet it offers a wide range of features and options."
+            name: "Dr. Paulo Henrique",
+            title: "Fisioterapeuta - Fisio+ Reabilitação",
+            quote: "Finalmente entendi quanto custa cada sessão de verdade. Acabaram os conflitos com meu sócio sobre valores. Agora temos dados concretos para tomar decisões."
         },
         {
             avatar: user6,
-            name: "Ahmed khasem",
-            title: "Founder of Let's code",
-            quote: "Mailgo is definitely the way to go when it comes to email marketing + I highly recommend it as an email marketing tool with AI support."
+            name: "Dra. Carolina Rocha",
+            title: "Médica - Clínica Integrada",
+            quote: "Em 90 dias aumentei minha margem de lucro em 40%. O sistema é tão completo que substitui consultoria de precificação. Melhor investimento que já fiz na clínica."
         },
     ]
 
@@ -54,7 +54,7 @@ const Testimonial = () => {
             <div id="testimonials" className="custom-screen text-gray-600 bg-gray-50">
                 <div className="max-w-2xl text-center md:mx-auto">
                     <h2 className="text-gray-900 text-3xl font-semibold sm:text-4xl">
-                        Mailgo is loved by the best founders around the world
+                        Profissionais de saúde que transformaram sua precificação
                     </h2>
                 </div>
                 <div className="mt-12">

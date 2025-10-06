@@ -7,13 +7,13 @@ const VisualFeatures = () => {
 
     const features = [
         {
-            title: "Send thousands of emails",
-            desc: "Send thousands of emails quickly and easily. You can customize the content of each email",
+            title: "Simulador Atual vs Ideal",
+            desc: "Compare em tempo real o que você cobra hoje com o que deveria cobrar para ter margem saudável. Descubra quanto está perdendo em cada procedimento e simule ajustes antes de mudar na prática.",
             img: Feature1
         },
         {
-            title: "Write your email content using AI",
-            desc: "AI-powered email content writing is the perfect solution for busy professionals who need to quickly create engaging emails.",
+            title: "Atualização Automática em Cascata",
+            desc: "Mudou um custo? O sistema recalcula automaticamente TODOS os procedimentos. Sem trabalho manual, sem planilhas quebradas, sem erros humanos. Economize 10-15 horas por mês.",
             img: Feature2
         },
     ]
@@ -22,10 +22,10 @@ const VisualFeatures = () => {
             <div className="custom-screen text-gray-600 bg-white">
                 <div className="max-w-xl mx-auto text-center">
                     <h2 className="text-gray-900 text-3xl font-semibold sm:text-4xl">
-                        Take your email marketing to the next level with Mailgo
+                        Da teoria à prática em minutos
                     </h2>
                     <p className="mt-3 text-gray-600">
-                        With Mailgo's powerful features, you can easily create and send beautiful emails that will engage your customers and drive more sales.
+                        Não é um curso, não é uma planilha. É um sistema inteligente que faz o trabalho pesado por você, mostrando exatamente onde você está e onde deveria estar.
                     </p>
                 </div>
                 <div className="mt-12">

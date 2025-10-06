@@ -25,7 +25,7 @@ const Hero = () => (
                                 href="/#pricing"
                                 className="flex items-center text-white bg-primary-800 hover:bg-primary-700 active:bg-primary-900 px-6 py-3 rounded-lg"
                             >
-                                Get Started
+                                Começar Agora
                             </NavLink>
                             <NavLink
                                 href="/#contact"
@@ -39,7 +39,7 @@ const Hero = () => (
                         <Image
                             src={HeroImg}
                             className="shadow-lg rounded-2xl max-w-3xl"
-                            alt="Mailgo"
+                            alt="QV Precifica - Software de Precificação Estratégica"
                         />
                     </div>
                 </div>
