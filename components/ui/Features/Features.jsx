@@ -67,6 +67,9 @@ const Features = () => {
                     }}
                 >
                     <div className="max-w-3xl mx-auto text-center">
+                        <div className="inline-block px-4 py-2 bg-primary-800 text-white rounded-full text-sm font-semibold mb-6">
+                            Funcionalidades Principais
+                        </div>
                         <h2 className="text-gray-900 text-4xl font-bold sm:text-5xl">
                             Tudo que você precisa para precificar corretamente
                         </h2>

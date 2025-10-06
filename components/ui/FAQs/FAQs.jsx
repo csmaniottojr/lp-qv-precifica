@@ -75,7 +75,11 @@ export default () => {
         {
             q: "Qual plano escolher?",
             a: "Prata: se você quer as funcionalidades completas e prefere configurar sozinho. Ouro (mais popular): se quer onboarding personalizado e suporte para implementar mais rápido. Diamante: para redes com múltiplas unidades que precisam de diagnóstico financeiro completo."
-        }
+        },
+        {
+            "q": "Posso exportar meus dados?",
+            "a": "Sim! Você pode exportar seus procedimentos e preços em planilha Excel a qualquer momento. Os dados são seus e podem ser usados onde quiser."
+          }
     ]
   
     return (
