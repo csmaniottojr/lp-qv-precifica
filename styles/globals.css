@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* Garantir background branco global */
-* {
+html, body, #__next {
     @apply bg-white;
 }
 

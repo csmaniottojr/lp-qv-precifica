@@ -75,7 +75,6 @@ const Testimonial = () => {
                             {
                                 testimonials.map((item, idx) => (
                                     <li key={idx} className="group relative p-8 rounded-2xl border-2 border-gray-200 bg-white hover:border-primary-300 hover:shadow-2xl transition-all duration-300">
-                                        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary-400 to-primary-600 rounded-t-2xl"></div>
                                         <figure className="flex flex-col justify-between gap-y-6 h-full">
                                             <blockquote className="relative pl-8">
                                                 <svg className="absolute -top-2 left-0 w-8 h-8 text-primary-200" fill="currentColor" viewBox="0 0 32 32">

@@ -43,7 +43,6 @@ export default () => {
                         {
                             features.map((item, idx) => (
                                 <li key={idx} className="group relative p-8 bg-white border border-gray-200 rounded-2xl hover:border-primary-300 hover:shadow-xl transition-all duration-300">
-                                    <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary-400 to-primary-600 rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                     <div className="w-14 h-14 border-2 border-primary-300 text-primary-800 rounded-xl flex items-center justify-center bg-primary-50 mb-5 group-hover:bg-primary-100 transition-colors duration-300">
                                         {item.icon}
                                     </div>
