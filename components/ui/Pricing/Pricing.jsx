@@ -17,8 +17,7 @@ const Pricing = () => {
                 "Simulador Atual vs Ideal",
                 "Procedimentos Ilimitados",
                 "Atualização Automática em Cascata",
-                "Análise de Viabilidade por Procedimento",
-                "Acesso Web Responsivo",
+                "Suporte via WhatsApp",
             ],
         },
         {
@@ -29,9 +28,6 @@ const Pricing = () => {
                 "Onboarding Personalizado 1:1",
                 "Sessão de Configuração Guiada",
                 "Suporte Prioritário",
-                "Materiais de Treinamento Exclusivos",
-                "Consultoria de Implementação",
-                "Templates de Precificação Prontos",
             ],
         },
         {
@@ -41,10 +37,7 @@ const Pricing = () => {
                 "Tudo do Plano Ouro",
                 "Para Redes de Clínicas (Multi-unidades)",
                 "Diagnóstico Personalizado de Saúde Financeira",
-                "Relatórios Consolidados por Unidade",
                 "Consultoria Estratégica Mensal",
-                "Análise Comparativa entre Unidades",
-                "Suporte Dedicado",
             ],
         },
     ];
