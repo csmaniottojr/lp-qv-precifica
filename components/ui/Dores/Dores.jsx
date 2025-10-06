@@ -28,7 +28,7 @@ export default () => {
     ]
 
     return (
-        <section className="py-16 bg-gray-50">
+        <section className="py-16 bg-white">
             <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
                 <div className="max-w-3xl mx-auto text-center space-y-4 mb-12">
                     <h2 className="text-gray-900 text-4xl font-bold sm:text-5xl">

@@ -122,13 +122,12 @@ const Pricing = () => {
                                         : 'border-gray-200 hover:border-primary-300 hover:shadow-xl bg-white'
                                 }`}>
                                     {isMiddlePlan && (
-                                        <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                                            <span className="bg-gradient-to-r from-primary-600 to-primary-700 text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg">
+                                        <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-10">
+                                            <span className="bg-gradient-to-r from-primary-600 to-primary-700 text-white px-4 py-1 rounded-full text-xs font-bold shadow-md">
                                                 ⭐ Mais Popular
                                             </span>
                                         </div>
                                     )}
-                                    <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-primary-400 to-primary-600 rounded-t-3xl"></div>
                                     <div className="mt-4">
                                         <span className={`text-2xl font-bold ${isMiddlePlan ? 'text-primary-800' : 'text-gray-900'}`}>
                                             {item.name}
