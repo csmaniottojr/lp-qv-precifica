@@ -72,8 +72,8 @@ const Features = () => {
     ]
 
     return (
-        <SectionWrapper>
-            <div id="features" className="custom-screen text-gray-600 bg-white">
+        <SectionWrapper className="bg-gray-50 py-16">
+            <div id="features" className="custom-screen text-gray-600">
                 <LayoutEffect
                     className="duration-1000 delay-300"
                     isInviewState={{
@@ -81,11 +81,11 @@ const Features = () => {
                         falseState: "opacity-0 translate-y-6"
                     }}
                 >
-                    <div className="max-w-xl mx-auto text-center">
-                        <h2 className="text-gray-900 text-3xl font-semibold sm:text-4xl">
+                    <div className="max-w-3xl mx-auto text-center">
+                        <h2 className="text-gray-900 text-4xl font-bold sm:text-5xl">
                             Tudo que você precisa para precificar corretamente
                         </h2>
-                        <p className="mt-3 text-gray-600">
+                        <p className="mt-5 text-lg text-gray-600 leading-relaxed">
                             Sistema completo de precificação estratégica. Do mapeamento de custos à decisão final de preços, com simulações e análises em tempo real.
                         </p>
                     </div>
@@ -97,18 +97,19 @@ const Features = () => {
                         falseState: "opacity-0"
                     }}
                 >
-                    <div className="relative mt-12">
-                        <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    <div className="relative mt-10">
+                        <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
                             {
                                 featuresList.map((item, idx) => (
-                                    <li key={idx} className="space-y-3 p-6 rounded-xl border border-gray-200 bg-white hover:shadow-lg transition-shadow duration-300">
-                                        <div className="w-12 h-12 flex items-center justify-center bg-primary-100 rounded-lg text-primary-800">
+                                    <li key={idx} className="group relative space-y-4 p-6 rounded-2xl border-2 border-gray-200 bg-white hover:border-primary-300 hover:shadow-xl transition-all duration-300">
+                                        <div className="absolute top-0 right-0 w-20 h-20 bg-primary-100 rounded-full blur-2xl opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
+                                        <div className="relative w-14 h-14 flex items-center justify-center bg-gradient-to-br from-primary-100 to-primary-200 rounded-xl text-primary-800 group-hover:scale-110 transition-transform duration-300">
                                             {item.icon}
                                         </div>
-                                        <h3 className="text-lg text-gray-900 font-semibold">
+                                        <h3 className="text-lg text-gray-900 font-bold relative">
                                             {item.title}
                                         </h3>
-                                        <p className="text-gray-600">
+                                        <p className="text-sm text-gray-600 leading-relaxed relative">
                                             {item.desc}
                                         </p>
                                     </li>

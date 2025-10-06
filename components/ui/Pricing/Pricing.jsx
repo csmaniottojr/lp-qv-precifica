@@ -50,21 +50,24 @@ const Pricing = () => {
     ];
 
     return (
-        <section className='py-14 bg-white'>
+        <section id="pricing" className='py-16 bg-white'>
             <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
-                <div className='relative max-w-xl mx-auto sm:text-center'>
-                    <h3 className='text-gray-900 text-3xl font-semibold sm:text-4xl'>
+                <div className='relative max-w-3xl mx-auto sm:text-center mb-12'>
+                    <div className="inline-block px-4 py-2 bg-primary-100 text-primary-800 rounded-full text-sm font-semibold mb-6">
+                        Planos e Preços
+                    </div>
+                    <h3 className='text-gray-900 text-4xl font-bold sm:text-5xl'>
                         Escolha o plano ideal para você
                     </h3>
-                    <div className='mt-3 max-w-xl'>
-                        <p className="text-gray-600">
+                    <div className='mt-5 max-w-2xl mx-auto'>
+                        <p className="text-lg text-gray-600 leading-relaxed">
                             Todas as funcionalidades de precificação estratégica. Escolha o nível de suporte que precisa.
                         </p>
                     </div>
                 </div>
                 
                 {/* Billing Type Selector */}
-                <div className="mt-12 flex justify-center">
+                <div className="mt-8 flex justify-center">
                     <div className="bg-gray-100 p-1 rounded-lg flex">
                         <button
                             onClick={() => setBillingType("yearly")}
@@ -113,26 +116,30 @@ const Pricing = () => {
                             }
                             
                             return (
-                                <div key={idx} className={`relative flex-1 flex items-stretch flex-col p-8 rounded-xl border-2 transition-all duration-300 ${
+                                <div key={idx} className={`relative flex-1 flex items-stretch flex-col p-8 rounded-3xl border-2 transition-all duration-300 ${
                                     isMiddlePlan 
-                                        ? 'border-primary-500 bg-gradient-to-br from-primary-50 to-white shadow-xl scale-105' 
-                                        : 'border-gray-200 hover:border-primary-300 hover:shadow-lg bg-white'
+                                        ? 'border-primary-400 bg-gradient-to-br from-primary-50 via-white to-primary-50/30 shadow-2xl scale-105 ring-4 ring-primary-200/50' 
+                                        : 'border-gray-200 hover:border-primary-300 hover:shadow-xl bg-white'
                                 }`}>
                                     {isMiddlePlan && (
-                                        <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                                            <span className="bg-primary-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
-                                                Mais Popular
+                                        <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                                            <span className="bg-gradient-to-r from-primary-600 to-primary-700 text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg">
+                                                ⭐ Mais Popular
                                             </span>
                                         </div>
                                     )}
-                                    <div>
-                                        <span className={`font-medium ${isMiddlePlan ? 'text-primary-800' : 'text-primary-800'}`}>
+                                    <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-primary-400 to-primary-600 rounded-t-3xl"></div>
+                                    <div className="mt-4">
+                                        <span className={`text-2xl font-bold ${isMiddlePlan ? 'text-primary-800' : 'text-gray-900'}`}>
                                             {item.name}
                                         </span>
-                                        <div className='mt-4 text-gray-900 text-3xl font-semibold'>
+                                        <div className='mt-6 text-gray-900 text-4xl font-bold'>
                                             {displayPrice} <span className="text-xl text-gray-600 font-normal">{billingPeriod}</span>
                                             {savingsText && (
-                                                <div className="text-sm text-green-600 font-medium mt-1">
+                                                <div className="text-sm text-green-600 font-semibold mt-2 flex items-center gap-1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
+                                                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" />
+                                                    </svg>
                                                     {savingsText}
                                                 </div>
                                             )}
@@ -157,13 +164,13 @@ const Pricing = () => {
                                         ))
                                     }
                                 </ul>
-                                <div className="flex-1 flex items-end">
-                                    <button className={`px-3 py-3 rounded-lg w-full font-semibold text-sm duration-150 ${
+                                <div className="flex-1 flex items-end mt-4">
+                                    <button className={`px-6 py-4 rounded-xl w-full font-bold text-base duration-300 transform hover:-translate-y-0.5 ${
                                         isMiddlePlan 
-                                            ? 'text-white bg-primary-600 hover:bg-primary-700 active:bg-primary-800' 
-                                            : 'text-white bg-primary-800 hover:bg-primary-700 active:bg-primary-900'
+                                            ? 'text-white bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 shadow-lg hover:shadow-xl' 
+                                            : 'text-white bg-primary-800 hover:bg-primary-700 shadow-md hover:shadow-lg'
                                     }`}>
-                                        Get Started
+                                        {isDiamondPlan ? 'Solicitar Proposta' : 'Começar Agora'}
                                     </button>
                                 </div>
                             </div>

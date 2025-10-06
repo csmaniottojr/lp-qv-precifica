@@ -15,30 +15,28 @@ const FaqsCard = (props) => {
 
     return (
         <div 
-            className="space-y-3 mt-5 overflow-hidden border-b border-gray-200"
+            className="space-y-3 mt-5 overflow-hidden rounded-2xl border-2 border-gray-200 bg-white hover:border-primary-300 transition-all duration-300"
             key={idx}
             onClick={handleOpenAnswer}
         >
-            <h4 className="cursor-pointer pb-5 flex items-center justify-between text-lg text-gray-900 font-medium hover:text-primary-800 transition-colors duration-200">
+            <h4 className={`cursor-pointer p-6 flex items-center justify-between text-lg font-bold transition-all duration-300 ${
+                state ? 'text-primary-800' : 'text-gray-900 hover:text-primary-700'
+            }`}>
                 {faqsList.q}
-                {
-                    state ? (
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary-800 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 12H4" />
-                        </svg>
-                    ) : (
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-600 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-                        </svg>
-                    )
-                }
+                <div className={`ml-4 flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full transition-all duration-300 ${
+                    state ? 'bg-primary-100 text-primary-800 rotate-180' : 'bg-gray-100 text-gray-600'
+                }`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                    </svg>
+                </div>
             </h4>
             <div
                 ref={answerElRef} className="duration-300"
                 style={state ? {height: answerH } : {height: '0px'}}
             >
-                <div>
-                    <p className="text-gray-600">
+                <div className="px-6 pb-6">
+                    <p className="text-gray-600 leading-relaxed">
                         {faqsList.a}
                     </p>
                 </div>
@@ -81,19 +79,23 @@ export default () => {
     ]
   
     return (
-        <section className="leading-relaxed max-w-screen-xl mt-12 mx-auto px-4 md:px-8 bg-white py-16">
-            <div className="space-y-3 text-center">
-                <h1 className="text-3xl text-gray-900 font-semibold">
+        <section className="leading-relaxed max-w-screen-xl mx-auto px-4 md:px-8 bg-gray-50 py-16">
+            <div className="space-y-4 text-center mb-12">
+                <div className="inline-block px-4 py-2 bg-primary-100 text-primary-800 rounded-full text-sm font-semibold mb-4">
+                    FAQ
+                </div>
+                <h1 className="text-4xl text-gray-900 font-bold sm:text-5xl">
                     Perguntas Frequentes
                 </h1>
-                <p className="text-gray-600 max-w-lg mx-auto text-lg">
+                <p className="text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed">
                     Respondemos as principais dúvidas. Ainda com dúvidas? Entre em contato.
                 </p>
             </div>
-            <div className="mt-14 max-w-2xl mx-auto">
+            <div className="mt-10 max-w-4xl mx-auto space-y-4">
                 {
                     faqsList.map((item, idx) => (
                         <FaqsCard
+                            key={idx}
                             idx={idx}
                             faqsList={item}
                         />

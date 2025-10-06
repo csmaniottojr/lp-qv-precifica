@@ -50,14 +50,20 @@ const Testimonial = () => {
     ]
 
     return (
-        <SectionWrapper>
-            <div id="testimonials" className="custom-screen text-gray-600 bg-gray-50">
-                <div className="max-w-2xl text-center md:mx-auto">
-                    <h2 className="text-gray-900 text-3xl font-semibold sm:text-4xl">
+        <SectionWrapper className="bg-gray-50 py-16">
+            <div id="testimonials" className="custom-screen text-gray-600">
+                <div className="max-w-3xl text-center mx-auto mb-12">
+                    <div className="inline-block px-4 py-2 bg-primary-100 text-primary-800 rounded-full text-sm font-semibold mb-6">
+                        Depoimentos
+                    </div>
+                    <h2 className="text-gray-900 text-4xl font-bold sm:text-5xl">
                         Profissionais de saúde que transformaram sua precificação
                     </h2>
+                    <p className="mt-5 text-lg text-gray-600">
+                        Resultados reais de quem já usa o QV Precifica
+                    </p>
                 </div>
-                <div className="mt-12">
+                <div className="mt-10">
                     <LayoutEffect
                         className="duration-1000 delay-300"
                         isInviewState={{
@@ -68,22 +74,29 @@ const Testimonial = () => {
                         <ul className="grid gap-6 duration-1000 delay-300 ease-in-out sm:grid-cols-2 lg:grid-cols-3">
                             {
                                 testimonials.map((item, idx) => (
-                                    <li key={idx} className="p-6 rounded-xl border border-gray-200 bg-white hover:shadow-lg transition-shadow duration-300">
+                                    <li key={idx} className="group relative p-8 rounded-2xl border-2 border-gray-200 bg-white hover:border-primary-300 hover:shadow-2xl transition-all duration-300">
+                                        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary-400 to-primary-600 rounded-t-2xl"></div>
                                         <figure className="flex flex-col justify-between gap-y-6 h-full">
-                                            <blockquote className="">
-                                                <p className="text-gray-700">
+                                            <blockquote className="relative">
+                                                <svg className="absolute -top-2 -left-2 w-8 h-8 text-primary-200" fill="currentColor" viewBox="0 0 32 32">
+                                                    <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+                                                </svg>
+                                                <p className="text-gray-700 leading-relaxed relative z-10">
                                                     {item.quote}
                                                 </p>
                                             </blockquote>
-                                            <div className="flex items-center gap-x-4">
-                                                <Image
-                                                    src={item.avatar}
-                                                    alt={item.name}
-                                                    className="w-14 h-14 rounded-full object-cover"
-                                                />
+                                            <div className="flex items-center gap-x-4 pt-4 border-t border-gray-100">
+                                                <div className="relative">
+                                                    <div className="absolute inset-0 bg-primary-200 rounded-full blur-md opacity-50"></div>
+                                                    <Image
+                                                        src={item.avatar}
+                                                        alt={item.name}
+                                                        className="relative w-14 h-14 rounded-full object-cover ring-2 ring-primary-100"
+                                                    />
+                                                </div>
                                                 <div>
-                                                    <span className="block text-gray-900 font-semibold">{item.name}</span>
-                                                    <span className="block text-sm mt-0.5 text-gray-600">{item.title}</span>
+                                                    <span className="block text-gray-900 font-bold">{item.name}</span>
+                                                    <span className="block text-sm mt-0.5 text-primary-700">{item.title}</span>
                                                 </div>
                                             </div>
                                         </figure>

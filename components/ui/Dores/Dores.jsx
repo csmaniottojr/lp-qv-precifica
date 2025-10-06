@@ -28,26 +28,29 @@ export default () => {
     ]
 
     return (
-        <section className="py-14 bg-gray-50">
+        <section className="py-16 bg-gray-50">
             <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
-                <div className="max-w-xl space-y-3">
-                    <p className="text-gray-900 text-3xl font-semibold sm:text-4xl">
+                <div className="max-w-3xl mx-auto text-center space-y-4 mb-12">
+                    <h2 className="text-gray-900 text-4xl font-bold sm:text-5xl">
                         Reconhece alguma dessas situações?
+                    </h2>
+                    <p className="text-lg text-gray-600">
+                        Se você se identifica com algum desses problemas, está no lugar certo
                     </p>
-
                 </div>
-                <div className="mt-12">
-                    <ul className="grid gap-x-12 divide-y divide-gray-200 [&>.feature-1]:pl-0 sm:grid-cols-2 sm:gap-y-8 sm:divide-y-0 lg:divide-x lg:grid-cols-3 lg:gap-x-0">
+                <div className="mt-10">
+                    <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                         {
                             features.map((item, idx) => (
-                                <li key={idx} className={`feature-${idx + 1} space-y-3 py-8 lg:px-12 sm:py-0`}>
-                                    <div className="w-12 h-12 border border-primary-300 text-primary-800 rounded-full flex items-center justify-center bg-primary-50">
+                                <li key={idx} className="group relative p-8 bg-white border border-gray-200 rounded-2xl hover:border-primary-300 hover:shadow-xl transition-all duration-300">
+                                    <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary-400 to-primary-600 rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                    <div className="w-14 h-14 border-2 border-primary-300 text-primary-800 rounded-xl flex items-center justify-center bg-primary-50 mb-5 group-hover:bg-primary-100 transition-colors duration-300">
                                         {item.icon}
                                     </div>
-                                    <h4 className="text-lg text-gray-900 font-semibold">
+                                    <h4 className="text-xl text-gray-900 font-bold mb-3">
                                         {item.title}
                                     </h4>
-                                    <p className="text-gray-600">
+                                    <p className="text-gray-600 leading-relaxed">
                                         {item.desc}
                                     </p>
                                 </li>
