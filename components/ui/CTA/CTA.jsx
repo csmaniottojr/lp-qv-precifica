@@ -1,11 +1,9 @@
-import Image from "next/image"
 import NavLink from "../NavLink"
-import bgPattern from "@/public/images/bg-pattern.webp"
 import LayoutEffect from "@/components/LayoutEffect"
 
 const CTA = () => (
-    <section className="relative bg-primary-800 overflow-hidden">
-        <div className="custom-screen py-16 relative z-10">
+    <section className="relative !bg-[#9d670c]" style={{backgroundColor: '#9d670c'}}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 !bg-transparent">
             <LayoutEffect
                 className="duration-1000 delay-300"
                 isInviewState={{
@@ -13,28 +11,33 @@ const CTA = () => (
                     falseState: "opacity-0 translate-y-6"
                 }}
             >
-                <div className="relative z-10">
-                    <div className="max-w-3xl mx-auto text-center">
-                        <h2 className="text-white text-4xl font-bold sm:text-5xl leading-tight">
-                            Chega de trabalhar de graça sem saber
-                        </h2>
-                        <p className="mt-6 text-white/90 text-lg leading-relaxed">
-                            Em 90 dias, clientes aumentam margem significativamente sem perder pacientes. É o fim do achismo e o início de decisões baseadas em dados reais.
-                        </p>
-                    </div>
-                    <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
+                <div className="text-center !bg-transparent">
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold !text-white mb-6 !bg-transparent">
+                        Chega de trabalhar de graça sem saber
+                    </h2>
+                    <p className="text-xl md:text-2xl !text-white mb-12 max-w-4xl mx-auto leading-relaxed !bg-transparent opacity-90">
+                        Em 90 dias, clientes aumentam margem significativamente sem perder pacientes. É o fim do achismo e o início de decisões baseadas em dados reais.
+                    </p>
+                    
+                    <div className="flex flex-col sm:flex-row gap-6 justify-center items-center !bg-transparent">
                         <NavLink
-                            href="/#pricing"
-                            className="flex items-center justify-center w-full sm:w-auto text-primary-800 bg-white hover:bg-gray-50 active:bg-gray-100 px-8 py-4 rounded-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-0.5"
+                            href="/#precos"
+                            className="group inline-flex items-center justify-center px-8 py-4 !bg-white !text-[#9d670c] font-semibold text-lg rounded-full hover:!bg-gray-100 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1"
                         >
                             Começar agora
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 ml-2">
-                                <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clipRule="evenodd" />
+                            <svg 
+                                className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" 
+                                fill="none" 
+                                stroke="currentColor" 
+                                viewBox="0 0 24 24"
+                            >
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                             </svg>
                         </NavLink>
+                        
                         <NavLink
-                            href="/#contact"
-                            className="flex items-center justify-center w-full sm:w-auto text-white bg-transparent border-2 border-white hover:bg-white hover:text-primary-800 active:bg-white active:text-primary-800 px-8 py-4 rounded-lg font-semibold transition-all duration-300"
+                            href="/#duvidas"
+                            className="inline-flex items-center justify-center px-8 py-4 border-2 !border-white !text-white font-semibold text-lg rounded-full hover:!bg-white hover:!text-[#9d670c] !bg-transparent transition-all duration-300"
                         >
                             Falar com Vendas
                         </NavLink>

@@ -9,10 +9,10 @@ const Navbar = () => {
     const menuBtnEl = useRef()
 
     const navigation = [
-        { name: "Features", href: "/#features" },
-        { name: "Pricing", href: "/#pricing" },
-        { name: "Testimonials", href: "/#testimonials" },
-        { name: "FAQs", href: "/#faqs" },
+        { name: "Recursos", href: "/#recursos" },
+        { name: "Preços", href: "/#precos" },
+        { name: "Depoimentos", href: "/#depoimentos" },
+        { name: "Dúvidas", href: "/#duvidas" },
     ]
 
     useEffect(() => {
@@ -35,7 +35,7 @@ const Navbar = () => {
                             {
                                 navigation.map((item, idx) => {
                                     return (
-                                        <li key={idx} className="hover:text-primary-800">
+                                        <li key={idx} className="hover:text-[#9d670c]">
                                             <Link href={item.href} className="block">
                                                 {item.name}
                                             </Link>
@@ -45,11 +45,11 @@ const Navbar = () => {
                             }
                         </ul>
                         <div className="gap-x-6 items-center justify-end mt-4 space-y-6 md:flex md:space-y-0 md:mt-0">
-                            <Link href="/login" className="block hover:text-primary-800 font-medium">
-                                Sign in
+                            <Link href="/login" className="block hover:text-[#9d670c] font-medium">
+                                Entrar
                             </Link>
-                            <NavLink href="/#pricing" className="flex items-center justify-center gap-x-1 text-sm text-white font-medium bg-primary-800 hover:bg-primary-700 active:bg-primary-900 px-6 py-3 rounded-lg md:inline-flex shadow-md hover:shadow-lg transition-all duration-300">
-                                Start now
+                            <NavLink href="/#precos" className="flex items-center justify-center gap-x-1 text-sm text-white font-medium px-6 py-3 rounded-lg md:inline-flex shadow-md hover:shadow-lg transition-all duration-300" style={{backgroundColor: '#9d670c'}}>
+                                Começar agora
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
                                     <path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" />
                                 </svg>

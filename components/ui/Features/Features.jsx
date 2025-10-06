@@ -58,7 +58,7 @@ const Features = () => {
 
     return (
         <SectionWrapper className="py-16">
-            <div id="features" className="custom-screen text-gray-600">
+            <div id="recursos" className="custom-screen text-gray-600">
                 <LayoutEffect
                     className="duration-1000 delay-300"
                     isInviewState={{
