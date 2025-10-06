@@ -71,7 +71,7 @@ const Pricing = () => {
                             }`}
                         >
                             Anual
-                            <span className="absolute -top-2 -right-2 bg-green-500 text-white text-xs px-2 py-1 rounded-full font-semibold">
+                            <span className="absolute -top-3 -left-2 bg-green-500 text-white text-xs px-2 py-1 rounded-full font-semibold">
                                 -25%
                             </span>
                         </button>

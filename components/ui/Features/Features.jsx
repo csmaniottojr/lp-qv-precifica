@@ -67,14 +67,14 @@ const Features = () => {
                     }}
                 >
                     <div className="max-w-3xl mx-auto text-center">
-                        <div className="inline-block px-4 py-2 bg-primary-800 text-white rounded-full text-sm font-semibold mb-6">
+                    <div className="inline-block px-4 py-2 bg-primary-100 text-primary-800 rounded-full text-sm font-semibold mb-2">
                             Funcionalidades Principais
                         </div>
                         <h2 className="text-gray-900 text-4xl font-bold sm:text-5xl">
                             Tudo que você precisa para precificar corretamente
                         </h2>
                         <p className="mt-5 text-lg text-gray-600 leading-relaxed">
-                            Sistema completo de precificação estratégica. Do mapeamento de custos à decisão final de preços, com simulações e análises em tempo real.
+                        Não é um curso, não é uma planilha. É um sistema inteligente que faz o trabalho pesado por você, mostrando exatamente onde você está e onde deveria estar.
                         </p>
                     </div>
                 </LayoutEffect>
