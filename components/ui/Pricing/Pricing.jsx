@@ -43,7 +43,7 @@ const Pricing = () => {
     ];
 
     return (
-        <section id="pricing" className='py-16 bg-white'>
+        <section id="precos" className='py-16 bg-white'>
             <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
                 <div className='relative max-w-3xl mx-auto sm:text-center mb-12'>
                     <div className="inline-block px-4 py-2 bg-primary-100 text-primary-800 rounded-full text-sm font-semibold mb-6">
