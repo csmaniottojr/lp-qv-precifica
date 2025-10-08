@@ -4,11 +4,11 @@ const Footer = () => {
 
     const footerNavs = [
         {
-            href: '#',
+            href: '/terms-of-service',
             name: 'Termos de Uso'
         },
         {
-            href: '#',
+            href: '/privacy-policy',
             name: 'Política de Privacidade'
         },
     ]
