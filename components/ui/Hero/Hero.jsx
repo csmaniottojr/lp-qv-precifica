@@ -15,7 +15,7 @@ const Hero = () => (
                 <div>
                     <div className="space-y-4 max-w-4xl mx-auto text-center">
                         <div className="inline-block px-4 py-2 bg-primary-100 text-primary-800 rounded-full text-sm font-semibold mb-2">
-                            Exclusivo para Médicos, Dentistas e Profissionais da Saúde
+                            Exclusivo para clínicas e consultórios
                         </div>
                         <h1 className="text-4xl text-gray-900 font-extrabold mx-auto leading-tight sm:text-5xl lg:text-6xl">
                             Aumente seu lucro com precificação baseada em{' '}
