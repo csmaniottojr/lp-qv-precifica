@@ -5,8 +5,8 @@ const Brand = ({ ...props }) => (
         src="/logo-qv.png"
         alt="QV Precifica"
         {...props}
-        width={110}
-        height={50}
+        width={60}
+        height={41}
         priority
     />
 )
