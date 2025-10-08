@@ -12,14 +12,12 @@ const Pricing = () => {
             yearly: {
                 price: "R$ 873",
                 installments: null,
-                billingPeriod: "/ano",
                 savingsText: "Economize R$ 291/ano",
                 paymentLink: "https://link-pagamento-prata-anual.com"
             },
             yearlyInstallments: {
                 price: "R$ 1.164",
                 installments: "12x de R$ 97",
-                billingPeriod: "/ano",
                 savingsText: null,
                 paymentLink: "https://link-pagamento-prata-parcelado.com"
             },
@@ -38,14 +36,12 @@ const Pricing = () => {
             yearly: {
                 price: "R$ 1.773",
                 installments: null,
-                billingPeriod: "/ano",
                 savingsText: "Economize R$ 591/ano",
                 paymentLink: "https://link-pagamento-ouro-anual.com"
             },
             yearlyInstallments: {
                 price: "R$ 2.364",
                 installments: "12x de R$ 197",
-                billingPeriod: "/ano",
                 savingsText: null,
                 paymentLink: "https://link-pagamento-ouro-parcelado.com"
             },
@@ -61,14 +57,12 @@ const Pricing = () => {
             yearly: {
                 price: "Sob consulta",
                 installments: null,
-                billingPeriod: "",
                 savingsText: null,
                 paymentLink: null
             },
             yearlyInstallments: {
                 price: "Sob consulta",
                 installments: null,
-                billingPeriod: "",
                 savingsText: null,
                 paymentLink: null
             },
@@ -135,7 +129,8 @@ const Pricing = () => {
                             
                             // Seleciona os dados baseado na modalidade de pagamento
                             const planData = billingType === "yearly" ? item.yearly : item.yearlyInstallments;
-                            const { price, billingPeriod, savingsText, paymentLink } = planData;
+                            const { price, installments, savingsText, paymentLink } = planData;
+                            const isYearlyInstallments = billingType === "yearly-installments";
                             
                             return (
                                 <div key={idx} className={`relative flex-1 flex items-stretch flex-col p-8 rounded-3xl border-2 transition-all duration-300 ${
@@ -154,8 +149,25 @@ const Pricing = () => {
                                         <span className={`text-2xl font-bold ${isMiddlePlan ? 'text-primary-800' : 'text-gray-900'}`}>
                                             {item.name}
                                         </span>
-                                        <div className='mt-6 text-gray-900 text-4xl font-bold'>
-                                            {price} <span className="text-xl text-gray-600 font-normal">{billingPeriod}</span>
+                                        <div className='mt-6'>
+                                            {isYearlyInstallments && installments ? (
+                                                // Layout para Anual Parcelado
+                                                <>
+                                                    <div className="text-gray-900 text-4xl font-bold">
+                                                        {installments}
+                                                    </div>
+                                                    <div className="mt-1 text-lg text-gray-600">
+                                                        Total: {price}
+                                                    </div>
+                                                </>
+                                            ) : (
+                                                // Layout para Anual ou Sob Consulta
+                                                <>
+                                                    <div className="text-gray-900 text-4xl font-bold">
+                                                        {price}
+                                                    </div>
+                                                </>
+                                            )}
                                             {savingsText && (
                                                 <div className="text-sm text-green-600 font-semibold mt-2 flex items-center gap-1">
                                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
