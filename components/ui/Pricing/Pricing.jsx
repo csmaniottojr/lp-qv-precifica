@@ -10,16 +10,16 @@ const Pricing = () => {
         {
             name: "Prata",
             yearly: {
-                price: "R$ 873",
+                price: "R$ 797",
                 installments: null,
-                savingsText: "Economize R$ 291/ano",
-                paymentLink: "https://link-pagamento-prata-anual.com"
+                savingsText: "Economize R$ 151",
+                paymentLink: "https://www.asaas.com/c/ku6kensfu7mwbvet"
             },
             yearlyInstallments: {
                 price: "R$ 1.164",
                 installments: "12x de R$ 97",
                 savingsText: null,
-                paymentLink: "https://link-pagamento-prata-parcelado.com"
+                paymentLink: "https://www.asaas.com/c/yf5r2cmpzmp7b5lg"
             },
             features: [
                 "Cadastro de Custos Fixos e Variáveis",
@@ -34,16 +34,16 @@ const Pricing = () => {
         {
             name: "Ouro",
             yearly: {
-                price: "R$ 1.773",
+                price: "R$ 997",
                 installments: null,
-                savingsText: "Economize R$ 591/ano",
-                paymentLink: "https://link-pagamento-ouro-anual.com"
+                savingsText: "Economize R$ 167",
+                paymentLink: "https://www.asaas.com/c/nxvhhzbd991fo22r"
             },
             yearlyInstallments: {
-                price: "R$ 2.364",
-                installments: "12x de R$ 197",
+                price: "R$ 1.164",
+                installments: "12x de R$ 97",
                 savingsText: null,
-                paymentLink: "https://link-pagamento-ouro-parcelado.com"
+                paymentLink: "https://www.asaas.com/c/kggo6g1shvgxyi6y"
             },
             features: [
                 "Todas as funcionalidades do Prata",
