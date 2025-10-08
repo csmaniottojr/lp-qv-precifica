@@ -11,7 +11,7 @@ const Pricing = () => {
             name: "Prata",
             yearly: {
                 price: "R$ 873",
-                installments: "12x de R$ 72,75",
+                installments: null,
                 billingPeriod: "/ano",
                 savingsText: "Economize R$ 291/ano",
                 paymentLink: "https://link-pagamento-prata-anual.com"
@@ -37,7 +37,7 @@ const Pricing = () => {
             name: "Ouro",
             yearly: {
                 price: "R$ 1.773",
-                installments: "12x de R$ 147,75",
+                installments: null,
                 billingPeriod: "/ano",
                 savingsText: "Economize R$ 591/ano",
                 paymentLink: "https://link-pagamento-ouro-anual.com"
@@ -60,12 +60,14 @@ const Pricing = () => {
             name: "Diamante",
             yearly: {
                 price: "Sob consulta",
+                installments: null,
                 billingPeriod: "",
                 savingsText: null,
                 paymentLink: null
             },
             yearlyInstallments: {
                 price: "Sob consulta",
+                installments: null,
                 billingPeriod: "",
                 savingsText: null,
                 paymentLink: null

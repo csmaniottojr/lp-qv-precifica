@@ -26,7 +26,7 @@ const Hero = () => (
                         </p>
                         <div className="flex flex-col sm:flex-row justify-center items-center font-medium text-base gap-4 pt-4">
                             <NavLink
-                                href="/#pricing"
+                                href="/#precos"
                                 className="flex items-center justify-center w-full sm:w-auto text-white bg-primary-800 hover:bg-primary-700 active:bg-primary-900 px-10 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5"
                             >
                                 Começar Agora
