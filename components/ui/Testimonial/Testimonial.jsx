@@ -1,10 +1,4 @@
 import SectionWrapper from "@/components/SectionWrapper"
-import user1 from "@/public/testimonial/user1.webp"
-import user2 from "@/public/testimonial/user2.webp"
-import user3 from "@/public/testimonial/user3.webp"
-import user4 from "@/public/testimonial/user4.webp"
-import user5 from "@/public/testimonial/user5.webp"
-import user6 from "@/public/testimonial/user6.webp"
 import Image from "next/image"
 import LayoutEffect from "@/components/LayoutEffect"
 
@@ -12,37 +6,37 @@ const Testimonial = () => {
 
     const testimonials = [
         {
-            avatar: user1,
+            avatar: "/testimonial/user1.webp",
             name: "Dr. Marcelo Silva",
             title: "Dentista - Clínica Odonto+",
             quote: "Descobri que estava cobrando 30% abaixo do necessário em implantes. Em 2 meses ajustei os preços e aumentei a margem sem perder um único paciente. O simulador mostrou exatamente onde eu estava perdendo dinheiro."
         },
         {
-            avatar: user2,
+            avatar: "/testimonial/user2.webp",
             name: "Dra. Juliana Costa",
             title: "Médica Esteta - Harmonize Clinic",
             quote: "Antes eu precificava copiando a concorrência. Agora sei exatamente quanto vale minha hora clínica e quanto preciso cobrar para ter margem saudável. Clareza financeira total."
         },
         {
-            avatar: user3,
+            avatar: "/testimonial/user3.webp",
             name: "Dr. Ricardo Mendes",
             title: "Ortodontista - Sorriso Perfeito",
             quote: "Economizo 15 horas por mês que gastava com planilhas. Mudou um custo? O sistema recalcula tudo automaticamente. Transformou minha gestão financeira."
         },
         {
-            avatar: user4,
+            avatar: "/testimonial/user4.webp",
             name: "Dra. Fernanda Alves",
             title: "Dermatologista - DermaVida",
             quote: "O ranking de rentabilidade me mostrou que 3 procedimentos estavam dando prejuízo! Ajustei os preços e agora todos os atendimentos são lucrativos. Resultado imediato."
         },
         {
-            avatar: user5,
+            avatar: "/testimonial/user5.webp",
             name: "Dr. Paulo Henrique",
             title: "Fisioterapeuta - Fisio+ Reabilitação",
             quote: "Finalmente entendi quanto custa cada sessão de verdade. Acabaram os conflitos com meu sócio sobre valores. Agora temos dados concretos para tomar decisões."
         },
         {
-            avatar: user6,
+            avatar: "/testimonial/user6.webp",
             name: "Dra. Carolina Rocha",
             title: "Médica - Clínica Integrada",
             quote: "Em 90 dias aumentei minha margem de lucro em 40%. O sistema é tão completo que substitui consultoria de precificação. Melhor investimento que já fiz na clínica."
@@ -90,6 +84,8 @@ const Testimonial = () => {
                                                     <Image
                                                         src={item.avatar}
                                                         alt={item.name}
+                                                        width={56}
+                                                        height={56}
                                                         className="relative w-14 h-14 rounded-full object-cover ring-2 ring-primary-100"
                                                     />
                                                 </div>
