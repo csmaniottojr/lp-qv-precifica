@@ -79,6 +79,10 @@ const FAQs = () => {
         {
             "q": "Posso exportar meus dados?",
             "a": "Sim! Você pode exportar seus procedimentos e preços em planilha Excel a qualquer momento. Os dados são seus e podem ser usados onde quiser."
+          },
+          {
+            "q": "Tem alguma garantia?",
+            "a": "Claro que sim! Queremos que você use nossa plataforma com total tranquilidade e confiança. Você tem 7 dias de garantia incondicional. Se por qualquer motivo você decidir que nossa solução não é para você, devolvemos 100% do seu investimento, sem perguntas, sem burocracia."
           }
     ]
   
