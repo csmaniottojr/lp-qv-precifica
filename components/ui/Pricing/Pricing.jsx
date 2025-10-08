@@ -9,7 +9,20 @@ const Pricing = () => {
     const plans = [
         {
             name: "Prata",
-            price: 97,
+            yearly: {
+                price: "R$ 873",
+                installments: "12x de R$ 72,75",
+                billingPeriod: "/ano",
+                savingsText: "Economize R$ 291/ano",
+                paymentLink: "https://link-pagamento-prata-anual.com"
+            },
+            yearlyInstallments: {
+                price: "R$ 1.164",
+                installments: "12x de R$ 97",
+                billingPeriod: "/ano",
+                savingsText: null,
+                paymentLink: "https://link-pagamento-prata-parcelado.com"
+            },
             features: [
                 "Cadastro de Custos Fixos e Variáveis",
                 "Cálculo Automático de Hora Clínica",
@@ -22,7 +35,20 @@ const Pricing = () => {
         },
         {
             name: "Ouro",
-            price: 197,
+            yearly: {
+                price: "R$ 1.773",
+                installments: "12x de R$ 147,75",
+                billingPeriod: "/ano",
+                savingsText: "Economize R$ 591/ano",
+                paymentLink: "https://link-pagamento-ouro-anual.com"
+            },
+            yearlyInstallments: {
+                price: "R$ 2.364",
+                installments: "12x de R$ 197",
+                billingPeriod: "/ano",
+                savingsText: null,
+                paymentLink: "https://link-pagamento-ouro-parcelado.com"
+            },
             features: [
                 "Todas as funcionalidades do Prata",
                 "Onboarding Personalizado 1:1",
@@ -32,7 +58,18 @@ const Pricing = () => {
         },
         {
             name: "Diamante",
-            price: null,
+            yearly: {
+                price: "Sob consulta",
+                billingPeriod: "",
+                savingsText: null,
+                paymentLink: null
+            },
+            yearlyInstallments: {
+                price: "Sob consulta",
+                billingPeriod: "",
+                savingsText: null,
+                paymentLink: null
+            },
             features: [
                 "Tudo do Plano Ouro",
                 "Para Redes de Clínicas (Multi-unidades)",
@@ -94,19 +131,9 @@ const Pricing = () => {
                             const isMiddlePlan = idx === 1; // Ouro plan
                             const isDiamondPlan = idx === 2; // Diamante plan
                             
-                            let displayPrice, billingPeriod, savingsText;
-                            
-                            if (isDiamondPlan) {
-                                displayPrice = "Sob consulta";
-                                billingPeriod = "";
-                                savingsText = null;
-                            } else {
-                                const yearlyPrice = Math.round(item.price * 12 * 0.75); // 25% discount only for "Anual"
-                                const yearlyInstallmentsPrice = item.price * 12; // Full price for "Anual Parcelado"
-                                displayPrice = billingType === "yearly" ? `R$ ${yearlyPrice}` : `R$ ${yearlyInstallmentsPrice}`;
-                                billingPeriod = "/ano";
-                                savingsText = billingType === "yearly" ? `Economize R$ ${yearlyInstallmentsPrice - yearlyPrice}/ano` : null;
-                            }
+                            // Seleciona os dados baseado na modalidade de pagamento
+                            const planData = billingType === "yearly" ? item.yearly : item.yearlyInstallments;
+                            const { price, billingPeriod, savingsText, paymentLink } = planData;
                             
                             return (
                                 <div key={idx} className={`relative flex-1 flex items-stretch flex-col p-8 rounded-3xl border-2 transition-all duration-300 ${
@@ -126,7 +153,7 @@ const Pricing = () => {
                                             {item.name}
                                         </span>
                                         <div className='mt-6 text-gray-900 text-4xl font-bold'>
-                                            {displayPrice} <span className="text-xl text-gray-600 font-normal">{billingPeriod}</span>
+                                            {price} <span className="text-xl text-gray-600 font-normal">{billingPeriod}</span>
                                             {savingsText && (
                                                 <div className="text-sm text-green-600 font-semibold mt-2 flex items-center gap-1">
                                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
@@ -157,13 +184,28 @@ const Pricing = () => {
                                     }
                                 </ul>
                                 <div className="flex-1 flex items-end mt-4">
-                                    <button className={`px-6 py-4 rounded-xl w-full font-bold text-base duration-300 transform hover:-translate-y-0.5 ${
-                                        isMiddlePlan 
-                                            ? 'text-white bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 shadow-lg hover:shadow-xl' 
-                                            : 'text-white bg-primary-800 hover:bg-primary-700 shadow-md hover:shadow-lg'
-                                    }`}>
-                                        {isDiamondPlan ? 'Solicitar Proposta' : 'Começar Agora'}
-                                    </button>
+                                    {paymentLink ? (
+                                        <a 
+                                            href={paymentLink}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className={`px-6 py-4 rounded-xl w-full font-bold text-base duration-300 transform hover:-translate-y-0.5 text-center ${
+                                                isMiddlePlan 
+                                                    ? 'text-white bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 shadow-lg hover:shadow-xl' 
+                                                    : 'text-white bg-primary-800 hover:bg-primary-700 shadow-md hover:shadow-lg'
+                                            }`}
+                                        >
+                                            Começar Agora
+                                        </a>
+                                    ) : (
+                                        <button className={`px-6 py-4 rounded-xl w-full font-bold text-base duration-300 transform hover:-translate-y-0.5 ${
+                                            isMiddlePlan 
+                                                ? 'text-white bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 shadow-lg hover:shadow-xl' 
+                                                : 'text-white bg-primary-800 hover:bg-primary-700 shadow-md hover:shadow-lg'
+                                        }`}>
+                                            Solicitar Proposta
+                                        </button>
+                                    )}
                                 </div>
                             </div>
                             );
