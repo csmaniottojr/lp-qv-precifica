@@ -13,8 +13,8 @@ const Testimonial = () => {
         },
         {
             avatar: "/testimonial/user2.webp",
-            name: "Dra. Juliana Costa",
-            title: "Médica Esteta - Harmonize Clinic",
+            name: "Dr. Lucas Martins",
+            title: "Ortopedista - OrtoPrime",
             quote: "Antes eu precificava copiando a concorrência. Agora sei exatamente quanto vale minha hora clínica e quanto preciso cobrar para ter margem saudável. Clareza financeira total."
         },
         {
@@ -25,8 +25,8 @@ const Testimonial = () => {
         },
         {
             avatar: "/testimonial/user4.webp",
-            name: "Dra. Fernanda Alves",
-            title: "Dermatologista - DermaVida",
+            name: "Dr Fernando Paiva",
+            title: "Cardiologista - CardioCare",
             quote: "O ranking de rentabilidade me mostrou que 3 procedimentos estavam dando prejuízo! Ajustei os preços e agora todos os atendimentos são lucrativos. Resultado imediato."
         },
         {
@@ -37,9 +37,9 @@ const Testimonial = () => {
         },
         {
             avatar: "/testimonial/user6.webp",
-            name: "Dra. Carolina Rocha",
-            title: "Médica - Clínica Integrada",
-            quote: "Em 90 dias aumentei minha margem de lucro em 40%. O sistema é tão completo que substitui consultoria de precificação. Melhor investimento que já fiz na clínica."
+            name: "Dr. Marcos Costa",
+            title: "Médico-responsável - Clínica Saúde Plena",
+            quote: "Fiz vários cursos de precificação, mas nenhum deu o resultado que eu esperava para a minha clínica. O QV Precifica realmente me ajudou a aumentar minha margem de lucro e a tomar decisões estratégicas para o negócio."
         },
     ]
 
