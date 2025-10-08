@@ -2,8 +2,8 @@ import Image from "next/image"
 
 const Brand = ({ ...props }) => (
     <Image
-        src="/mailgo.svg"
-        alt="Mailgo logo"
+        src="/logo-qv.png"
+        alt="QV Precifica"
         {...props}
         width={110}
         height={50}
