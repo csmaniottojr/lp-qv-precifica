@@ -13,6 +13,7 @@ const Navbar = () => {
         { name: "Preços", href: "/#precos" },
         { name: "Depoimentos", href: "/#depoimentos" },
         { name: "Dúvidas", href: "/#duvidas" },
+        { name: "Quem Somos", href: "/quem-somos" },
     ]
 
     useEffect(() => {
