@@ -4,6 +4,8 @@ import Features from "@/components/ui/Features";
 import Hero from "@/components/ui/Hero";
 import Pricing from "@/components/ui/Pricing";
 import Dores from "@/components/ui/Dores";
+import WhatsAppCTA from "@/components/ui/WhatsAppCTA";
+
 export default function Home() {
   return (
     <>
@@ -14,6 +16,7 @@ export default function Home() {
       <CTA />
       <Pricing />
       <FAQs />
+      <WhatsAppCTA />
     </>
   );
 }
