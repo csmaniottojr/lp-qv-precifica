@@ -46,7 +46,7 @@ const Navbar = () => {
                             }
                         </ul>
                         <div className="gap-x-6 items-center justify-end mt-4 space-y-6 md:flex md:space-y-0 md:mt-0">
-                            <Link href="/login" className="block hover:text-[#9d670c] font-medium">
+                            <Link href="https://precifica-app.qvsolucoes.com.br" className="block hover:text-[#9d670c] font-medium">
                                 Entrar
                             </Link>
                             <NavLink href="/#precos" className="flex items-center justify-center gap-x-1 text-sm text-white font-medium px-6 py-3 rounded-lg md:inline-flex shadow-md hover:shadow-lg transition-all duration-300" style={{backgroundColor: '#9d670c'}}>
