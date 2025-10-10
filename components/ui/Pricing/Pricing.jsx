@@ -208,13 +208,17 @@ const Pricing = () => {
                                             Começar Agora
                                         </a>
                                     ) : (
-                                        <button className={`px-6 py-4 rounded-xl w-full font-bold text-base duration-300 transform hover:-translate-y-0.5 ${
+                                        <a 
+                                            href="https://wa.me/5555484042838?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20QV%20Precifica"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className={`px-6 py-4 rounded-xl w-full font-bold text-base duration-300 transform hover:-translate-y-0.5 text-center ${
                                             isMiddlePlan 
                                                 ? 'text-white bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 shadow-lg hover:shadow-xl' 
                                                 : 'text-white bg-primary-800 hover:bg-primary-700 shadow-md hover:shadow-lg'
                                         }`}>
                                             Solicitar Proposta
-                                        </button>
+                                        </a>
                                     )}
                                 </div>
                             </div>

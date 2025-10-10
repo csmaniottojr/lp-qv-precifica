@@ -36,7 +36,7 @@ const CTA = () => (
                         </NavLink>
                         
                         <NavLink
-                            href="/#duvidas"
+                            href="https://wa.me/5555484042838?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20QV%20Precifica"
                             className="inline-flex items-center justify-center px-8 py-4 border-2 !border-white !text-white font-semibold text-lg rounded-full hover:!bg-white hover:!text-[#9d670c] !bg-transparent transition-all duration-300"
                         >
                             Falar com Vendas

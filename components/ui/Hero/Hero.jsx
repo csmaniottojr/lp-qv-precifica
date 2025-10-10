@@ -35,7 +35,7 @@ const Hero = () => (
                                 </svg>
                             </NavLink>
                             <NavLink
-                                href="/#contact"
+                                href="https://wa.me/5555484042838?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20QV%20Precifica"
                                 className="flex items-center justify-center w-full sm:w-auto text-primary-800 bg-white border-2 border-primary-800 hover:bg-primary-50 active:bg-primary-100 px-10 py-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
                             >
                                 Falar com Vendas
