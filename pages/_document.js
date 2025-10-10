@@ -6,10 +6,10 @@ export default function Document() {
     <Html lang='en'>
       <Head />
       <body className='bg-gray-900'>
+        <GoogleTagManager gtmId="GTM-5BW658ZD" />
         <Main />
         <NextScript />
       </body>
-      <GoogleTagManager gtmId="GTM-5BW658ZD" />
     </Html>
   );
 }
