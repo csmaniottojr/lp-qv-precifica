@@ -42,18 +42,6 @@ export default function PurchaseConfirmed() {
             </Head>
 
             <div className="bg-white min-h-screen">
-                {/* Header simples */}
-                <div className="border-b border-gray-200">
-                    <div className="max-w-screen-xl mx-auto px-4 py-6 md:px-8">
-                        <Link href="/" className="flex items-center">
-                            <img
-                                src="/logo-qv.png"
-                                alt="QV Business Solution"
-                                className="h-10 w-auto"
-                            />
-                        </Link>
-                    </div>
-                </div>
 
                 {/* Hero Section com Confetti effect */}
                 <section className="relative overflow-hidden bg-gradient-to-b from-green-50 to-white py-16 md:py-24">
