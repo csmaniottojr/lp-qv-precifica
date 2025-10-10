@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function About() {
     const stats = [
@@ -259,7 +260,7 @@ export default function About() {
                             Junte-se a centenas de empresas que já transformaram sua gestão de cobranças com a QV Business Solution
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                            <a 
+                            <Link 
                                 href="/#precos" 
                                 className="inline-flex items-center gap-2 px-8 py-4 text-white font-medium rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
                                 style={{backgroundColor: '#9d670c'}}
@@ -268,20 +269,20 @@ export default function About() {
                                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                                 </svg>
-                            </a>
-                            <a 
+                            </Link>
+                            <Link 
                                 href="/#duvidas" 
                                 className="inline-flex items-center gap-2 px-8 py-4 bg-white text-gray-700 font-medium rounded-lg border-2 border-gray-300 hover:border-[#9d670c] hover:text-[#9d670c] transition-all duration-300"
                             >
                                 Saiba Mais
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </section>
 
                 {/* Back to Home */}
                 <div className="max-w-screen-xl mx-auto px-4 md:px-8 py-8">
-                    <a 
+                    <Link 
                         href="/" 
                         className="inline-flex items-center text-[#9d670c] hover:text-[#7a5009] font-medium"
                     >
@@ -289,7 +290,7 @@ export default function About() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                         </svg>
                         Voltar para a página inicial
-                    </a>
+                    </Link>
                 </div>
             </div>
         </>

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TermsOfService() {
     return (
@@ -161,7 +162,7 @@ export default function TermsOfService() {
                         <section className="mb-8">
                             <h2 className="text-2xl font-semibold text-gray-900 mb-4">7. Privacidade e Proteção de Dados</h2>
                             <p className="text-gray-700 mb-4">
-                                Sua privacidade é importante para nós. Nossa coleta e uso de informações pessoais são regidos por nossa <a href="/privacy-policy" className="text-blue-600 hover:underline">Política de Privacidade</a>, que faz parte integrante destes Termos.
+                                Sua privacidade é importante para nós. Nossa coleta e uso de informações pessoais são regidos por nossa <Link href="/privacy-policy" className="text-blue-600 hover:underline">Política de Privacidade</Link>, que faz parte integrante destes Termos.
                             </p>
                             <p className="text-gray-700 mb-4">
                                 Você é responsável por garantir que tem permissão legal para coletar e processar os dados de seus clientes que você insere em nossa plataforma, em conformidade com a LGPD e outras leis aplicáveis.
@@ -278,7 +279,7 @@ export default function TermsOfService() {
 
                     {/* Back to Home */}
                     <div className="mt-12 pt-8 border-t border-gray-200">
-                        <a 
+                        <Link 
                             href="/" 
                             className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium"
                         >
@@ -286,7 +287,7 @@ export default function TermsOfService() {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                             </svg>
                             Voltar para a página inicial
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

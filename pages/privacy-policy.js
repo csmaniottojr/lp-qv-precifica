@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function PrivacyPolicy() {
     return (
@@ -173,7 +174,7 @@ export default function PrivacyPolicy() {
 
                     {/* Back to Home */}
                     <div className="mt-12 pt-8 border-t border-gray-200">
-                        <a 
+                        <Link 
                             href="/" 
                             className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium"
                         >
@@ -181,7 +182,7 @@ export default function PrivacyPolicy() {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                             </svg>
                             Voltar para a página inicial
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
