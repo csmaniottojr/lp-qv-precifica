@@ -16,8 +16,8 @@ const Pricing = () => {
                 paymentLink: "https://www.asaas.com/c/ku6kensfu7mwbvet"
             },
             yearlyInstallments: {
-                price: "R$ 1.164",
-                installments: "12x de R$ 97",
+                price: "R$ 948",
+                installments: "12x de R$ 79",
                 savingsText: null,
                 paymentLink: "https://www.asaas.com/c/yf5r2cmpzmp7b5lg"
             },
@@ -27,7 +27,6 @@ const Pricing = () => {
                 "Configuração de Margens de Lucro",
                 "Simulador Atual vs Ideal",
                 "Procedimentos Ilimitados",
-                "Atualização Automática em Cascata",
                 "Suporte via WhatsApp",
             ],
         },
