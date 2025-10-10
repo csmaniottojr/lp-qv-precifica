@@ -1,46 +1,42 @@
 import SectionWrapper from "@/components/SectionWrapper"
-import Image from "next/image"
 import LayoutEffect from "@/components/LayoutEffect"
 
 const Testimonial = () => {
 
     const testimonials = [
         {
-            avatar: "/testimonial/user1.webp",
-            name: "Dr. Marcelo Silva",
-            title: "Dentista - Clínica Odonto+",
-            quote: "Descobri que estava cobrando 30% abaixo do necessário em implantes. Em 2 meses ajustei os preços e aumentei a margem sem perder um único paciente. O simulador mostrou exatamente onde eu estava perdendo dinheiro."
+            name: "Dr. Marcos Costa",
+            title: "Médico-responsável - Clínica Saúde Plena",
+            quote: "Fiz vários cursos de precificação, mas nenhum deu o resultado que eu esperava para a minha clínica. O QV Precifica realmente me ajudou a aumentar minha margem de lucro e a tomar decisões estratégicas para o negócio."
         },
         {
-            avatar: "/testimonial/user2.webp",
+            name: "Dra Ana Carolina Dutra",
+            title: "Cardiologista - CardioCare",
+            quote: "O ranking de rentabilidade me mostrou que 3 procedimentos estavam dando prejuízo! Ajustei os preços e agora todos os atendimentos são lucrativos. Resultado imediato."
+        },
+        {
             name: "Dr. Lucas Martins",
             title: "Ortopedista - OrtoPrime",
             quote: "Antes eu precificava copiando a concorrência. Agora sei exatamente quanto vale minha hora clínica e quanto preciso cobrar para ter margem saudável. Clareza financeira total."
         },
         {
-            avatar: "/testimonial/user3.webp",
+            name: "Dra. Marcela Paiva",
+            title: "Dentista - Clínica Odonto+",
+            quote: "Descobri que estava cobrando 30% abaixo do necessário em implantes. Em 2 meses ajustei os preços e aumentei a margem sem perder um único paciente. O simulador mostrou exatamente onde eu estava perdendo dinheiro."
+        },
+
+        {
             name: "Dr. Ricardo Mendes",
             title: "Ortodontista - Sorriso Perfeito",
             quote: "Economizo 15 horas por mês que gastava com planilhas. Mudou um custo? O sistema recalcula tudo automaticamente. Transformou minha gestão financeira."
         },
+
         {
-            avatar: "/testimonial/user4.webp",
-            name: "Dr Fernando Paiva",
-            title: "Cardiologista - CardioCare",
-            quote: "O ranking de rentabilidade me mostrou que 3 procedimentos estavam dando prejuízo! Ajustei os preços e agora todos os atendimentos são lucrativos. Resultado imediato."
-        },
-        {
-            avatar: "/testimonial/user5.webp",
             name: "Dr. Paulo Henrique",
             title: "Fisioterapeuta - Fisio+ Reabilitação",
             quote: "Finalmente entendi quanto custa cada sessão de verdade. Acabaram os conflitos com meu sócio sobre valores. Agora temos dados concretos para tomar decisões."
         },
-        {
-            avatar: "/testimonial/user6.webp",
-            name: "Dr. Marcos Costa",
-            title: "Médico-responsável - Clínica Saúde Plena",
-            quote: "Fiz vários cursos de precificação, mas nenhum deu o resultado que eu esperava para a minha clínica. O QV Precifica realmente me ajudou a aumentar minha margem de lucro e a tomar decisões estratégicas para o negócio."
-        },
+
     ]
 
     return (
@@ -78,21 +74,9 @@ const Testimonial = () => {
                                                     {item.quote}
                                                 </p>
                                             </blockquote>
-                                            <div className="flex items-center gap-x-4 pt-4 border-t border-gray-100">
-                                                <div className="relative">
-                                                    <div className="absolute inset-0 bg-primary-200 rounded-full blur-md opacity-50"></div>
-                                                    <Image
-                                                        src={item.avatar}
-                                                        alt={item.name}
-                                                        width={56}
-                                                        height={56}
-                                                        className="relative w-14 h-14 rounded-full object-cover ring-2 ring-primary-100"
-                                                    />
-                                                </div>
-                                                <div>
-                                                    <span className="block text-gray-900 font-bold">{item.name}</span>
-                                                    <span className="block text-sm mt-0.5 text-primary-700">{item.title}</span>
-                                                </div>
+                                            <div className="pt-4 border-t border-gray-100 text-center">
+                                                <span className="block text-gray-900 font-bold text-lg">{item.name}</span>
+                                                <span className="block text-sm mt-1 text-primary-700 font-medium">{item.title}</span>
                                             </div>
                                         </figure>
                                     </li>
