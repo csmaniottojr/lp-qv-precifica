@@ -33,29 +33,6 @@ export default function PurchaseConfirmed() {
         }
     ];
 
-    const nextSteps = [
-        {
-            number: "1",
-            title: "Verifique seu e-mail",
-            description: "Você receberá um e-mail de confirmação com suas credenciais de acesso e instruções detalhadas."
-        },
-        {
-            number: "2",
-            title: "Configure sua conta",
-            description: "Acesse a plataforma e configure suas preferências, adicione sua logo e personalize as mensagens."
-        },
-        {
-            number: "3",
-            title: "Importe seus clientes",
-            description: "Faça upload da sua base de clientes ou integre com seu sistema de gestão atual."
-        },
-        {
-            number: "4",
-            title: "Comece a cobrar",
-            description: "Ative as automações e deixe a plataforma trabalhar por você!"
-        }
-    ];
-
     return (
         <>
             <Head>
@@ -97,13 +74,8 @@ export default function PurchaseConfirmed() {
                             🎉 Parabéns pela Compra!
                         </h1>
                         <p className="text-xl text-gray-600 mb-8">
-                            Sua assinatura foi confirmada com sucesso. Bem-vindo à QV Business Solution!
+                            Sua assinatura do QV Precifica foi confirmada com sucesso.
                         </p>
-
-                        <div className="bg-white border border-green-200 rounded-lg p-6 mb-8 inline-block">
-                            <p className="text-sm text-gray-600 mb-2">📧 E-mail de confirmação será enviado para:</p>
-                            <p className="text-lg font-semibold text-gray-900">O e-mail cadastrado no pagamento (Asaas)</p>
-                        </div>
 
                         {/* Benefits Cards */}
                         <div className="grid md:grid-cols-3 gap-6 mt-12">
@@ -124,101 +96,6 @@ export default function PurchaseConfirmed() {
                     </div>
                 </section>
 
-                {/* Email Instructions */}
-                <section className="py-16 bg-white">
-                    <div className="max-w-4xl mx-auto px-4 md:px-8">
-                        <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 md:p-12 border border-blue-100">
-                            <div className="flex items-start gap-4">
-                                <div className="flex-shrink-0">
-                                    <div className="bg-blue-500 rounded-full p-3">
-                                        <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div className="flex-1">
-                                    <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                                        Aguarde o E-mail de Boas-Vindas
-                                    </h2>
-                                    <p className="text-gray-700 text-lg mb-4 leading-relaxed">
-                                        Enviamos um e-mail de confirmação com todas as instruções necessárias para começar a usar a plataforma. 
-                                        Este e-mail contém:
-                                    </p>
-                                    <ul className="space-y-3 mb-6">
-                                        <li className="flex items-start gap-3">
-                                            <svg className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                            </svg>
-                                            <span className="text-gray-700">Suas credenciais de acesso (usuário e senha)</span>
-                                        </li>
-                                        <li className="flex items-start gap-3">
-                                            <svg className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                            </svg>
-                                            <span className="text-gray-700">Link direto para acessar a plataforma</span>
-                                        </li>
-                                        <li className="flex items-start gap-3">
-                                            <svg className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                            </svg>
-                                            <span className="text-gray-700">Guia rápido de primeiros passos</span>
-                                        </li>
-                                        <li className="flex items-start gap-3">
-                                            <svg className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                            </svg>
-                                            <span className="text-gray-700">Informações de contato do suporte</span>
-                                        </li>
-                                    </ul>
-                                    <div className="bg-white rounded-lg p-4 border border-blue-200">
-                                        <p className="text-sm text-gray-600">
-                                            <strong className="text-gray-900">⚠️ Não recebeu o e-mail?</strong><br />
-                                            Verifique sua caixa de spam ou lixo eletrônico. Se necessário, entre em contato com nosso suporte: 
-                                            <a href="mailto:suporte@qvbusiness.com.br" className="text-blue-600 hover:underline ml-1">
-                                                suporte@qvbusiness.com.br
-                                            </a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                {/* Next Steps */}
-                <section className="py-16 bg-gray-50">
-                    <div className="max-w-4xl mx-auto px-4 md:px-8">
-                        <div className="text-center mb-12">
-                            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                                Próximos Passos
-                            </h2>
-                            <p className="text-xl text-gray-600">
-                                Siga este roteiro para começar a usar a plataforma
-                            </p>
-                        </div>
-
-                        <div className="space-y-6">
-                            {nextSteps.map((step, idx) => (
-                                <div key={idx} className="bg-white rounded-xl p-6 shadow-md border border-gray-200 flex gap-6 hover:shadow-lg transition-shadow">
-                                    <div className="flex-shrink-0">
-                                        <div className="w-12 h-12 bg-gradient-to-br from-[#9d670c] to-[#7a5009] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
-                                            {step.number}
-                                        </div>
-                                    </div>
-                                    <div className="flex-1">
-                                        <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                                            {step.title}
-                                        </h3>
-                                        <p className="text-gray-600 leading-relaxed">
-                                            {step.description}
-                                        </p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-
                 {/* Support Section */}
                 <section className="py-16 bg-white">
                     <div className="max-w-4xl mx-auto px-4 md:px-8">
@@ -230,15 +107,6 @@ export default function PurchaseConfirmed() {
                                 Nossa equipe de suporte está pronta para ajudá-lo em cada etapa
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <a
-                                    href="mailto:suporte@qvbusiness.com.br"
-                                    className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[#9d670c] font-medium rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
-                                >
-                                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                    </svg>
-                                    Enviar E-mail
-                                </a>
                                 <a
                                     href="https://wa.me/5511999999999"
                                     target="_blank"
