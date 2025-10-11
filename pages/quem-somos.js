@@ -3,120 +3,57 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function About() {
-    const stats = [
-        { label: "Empresas atendidas", value: "500+" },
-        { label: "Mensagens enviadas", value: "1M+" },
-        { label: "Taxa de recuperação", value: "85%" },
-        { label: "Satisfação", value: "98%" }
-    ];
-
-    const values = [
-        {
-            icon: (
-                <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-            ),
-            title: "Transparência",
-            description: "Acreditamos em uma comunicação clara e honesta com nossos clientes e seus devedores."
-        },
-        {
-            icon: (
-                <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-            ),
-            title: "Eficiência",
-            description: "Automatizamos processos para que você economize tempo e aumente sua taxa de recuperação."
-        },
-        {
-            icon: (
-                <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-                </svg>
-            ),
-            title: "Respeito",
-            description: "Tratamos todos com dignidade, mantendo práticas éticas em todas as cobranças."
-        },
-        {
-            icon: (
-                <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                </svg>
-            ),
-            title: "Inovação",
-            description: "Estamos sempre buscando novas tecnologias para melhorar nossos serviços."
-        }
-    ];
-
-    const team = [
-        {
-            name: "Equipe de Desenvolvimento",
-            role: "Tecnologia & Inovação",
-            description: "Nossa equipe técnica trabalha incansavelmente para criar soluções robustas e escaláveis."
-        },
-        {
-            name: "Equipe de Suporte",
-            role: "Atendimento ao Cliente",
-            description: "Dedicados a garantir que você tenha a melhor experiência com nossa plataforma."
-        },
-        {
-            name: "Equipe de Produto",
-            role: "Estratégia & Design",
-            description: "Focados em entender suas necessidades e criar funcionalidades que fazem a diferença."
-        }
-    ];
 
     return (
         <>
             <Head>
-                <title>Quem Somos - QV Business Solution</title>
-                <meta name="description" content="Conheça a QV Business Solution e nossa missão de transformar a gestão de cobranças" />
+                <title>Quem Somos - QV Precificação</title>
+                <meta name="description" content="Conheça a QV Precificação e o Grupo QV - especialistas em organizar e planejar as finanças de clínicas e consultórios" />
             </Head>
 
             <div className="bg-white">
                 {/* Hero Section */}
                 <section className="relative bg-gradient-to-b from-gray-50 to-white py-16 md:py-24">
                     <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-                        <div className="max-w-3xl mx-auto text-center">
+                        <div className="max-w-4xl mx-auto text-center">
                             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                                 Quem Somos
                             </h1>
-                            <p className="text-xl text-gray-600 leading-relaxed">
-                                Somos a QV Business Solution, uma empresa dedicada a transformar a forma como empresas gerenciam suas cobranças através da tecnologia e automação.
+                            <p className="text-xl text-gray-600 leading-relaxed mb-8">
+                                A QV Precificação é uma das soluções do <span className="font-semibold text-primary-800">Grupo QV</span>, que há anos organiza e planeja as finanças de clínicas e consultórios com foco em aumentar os lucros, realizar sonhos e garantir QV — abreviação de <span className="font-semibold text-primary-800">Qualidade de Vida!</span>
                             </p>
+                            <div className="inline-block px-6 py-3 bg-primary-100 text-primary-800 rounded-full text-lg font-semibold">
+                                Acreditamos que o profissional da saúde não deve abrir mão da sua Qualidade de Vida!
+                            </div>
                         </div>
                     </div>
                 </section>
 
-                {/* Mission Section */}
+                {/* Founder Section */}
                 <section className="py-16 md:py-20">
                     <div className="max-w-screen-xl mx-auto px-4 md:px-8">
                         <div className="grid md:grid-cols-2 gap-12 items-center">
                             <div>
                                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                                    Nossa Missão
+                                    Sobre o fundador
                                 </h2>
-                                <p className="text-gray-700 text-lg mb-4 leading-relaxed">
-                                    Nossa missão é simplificar e humanizar o processo de cobrança, proporcionando às empresas ferramentas eficientes que automatizam tarefas repetitivas enquanto mantêm um relacionamento respeitoso com os clientes.
-                                </p>
-                                <p className="text-gray-700 text-lg mb-4 leading-relaxed">
-                                    Acreditamos que a tecnologia pode e deve ser usada para criar processos mais justos, transparentes e eficazes, beneficiando tanto empresas quanto consumidores.
+                                <p className="text-gray-700 text-lg mb-6 leading-relaxed">
+                                    A QV foi criada por <span className="font-semibold text-primary-800">Jaci Kons</span>, profissional com mais de 10 anos de experiência no mercado financeiro, que já atendeu dezenas de clínicas em todo o Brasil.
                                 </p>
                                 <p className="text-gray-700 text-lg leading-relaxed">
-                                    Através da nossa plataforma, buscamos reduzir a inadimplência, melhorar o fluxo de caixa das empresas e promover uma cultura de pagamento mais saudável no Brasil.
+                                    Sua expertise e visão estratégica foram fundamentais para desenvolver soluções que realmente atendem às necessidades específicas do setor da saúde.
                                 </p>
                             </div>
                             <div className="relative">
-                                <div className="bg-gradient-to-br from-[#9d670c] to-[#7a5009] rounded-2xl p-8 text-white shadow-2xl">
-                                    <h3 className="text-2xl font-bold mb-6">Nossa Visão</h3>
+                                <div className="bg-gradient-to-br from-primary-600 to-primary-800 rounded-2xl p-8 text-white shadow-2xl">
+                                    <h3 className="text-2xl font-bold mb-6">Nossa História</h3>
                                     <p className="text-lg leading-relaxed mb-6">
-                                        Ser a plataforma líder em automação de cobranças no Brasil, reconhecida pela excelência, inovação e ética em nossos serviços.
+                                        O Grupo QV nasceu oferecendo consultoria financeira especializada em clínicas e consultórios e, a partir dessa vivência, desenvolveu soluções únicas para as principais dores do setor.
                                     </p>
                                     <div className="border-t border-white/20 pt-6">
-                                        <h4 className="font-semibold mb-2">Fundada em 2023</h4>
+                                        <h4 className="font-semibold mb-2">Experiência Comprovada</h4>
                                         <p className="text-white/90">
-                                            Nascemos com o propósito de revolucionar o mercado de gestão de cobranças.
+                                            Mais de 10 anos transformando a gestão financeira de clínicas e consultórios.
                                         </p>
                                     </div>
                                 </div>
@@ -125,125 +62,39 @@ export default function About() {
                     </div>
                 </section>
 
-                {/* Stats Section */}
-                <section className="py-16 bg-gray-50">
-                    <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-                        <div className="text-center mb-12">
-                            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                                Nossos Números
-                            </h2>
-                            <p className="text-gray-600 text-lg">
-                                Resultados que demonstram nosso compromisso com a excelência
-                            </p>
-                        </div>
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                            {stats.map((stat, idx) => (
-                                <div key={idx} className="text-center">
-                                    <div className="text-4xl md:text-5xl font-bold text-[#9d670c] mb-2">
-                                        {stat.value}
-                                    </div>
-                                    <div className="text-gray-600 font-medium">
-                                        {stat.label}
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-
-                {/* Values Section */}
+                
+                {/* Purpose Section */}
                 <section className="py-16 md:py-20">
                     <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-                        <div className="text-center mb-12">
-                            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                                Nossos Valores
-                            </h2>
-                            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-                                Princípios que guiam todas as nossas decisões e ações
-                            </p>
-                        </div>
-                        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                            {values.map((value, idx) => (
-                                <div key={idx} className="bg-white p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-shadow duration-300">
-                                    <div className="text-[#9d670c] mb-4">
-                                        {value.icon}
-                                    </div>
-                                    <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                                        {value.title}
-                                    </h3>
-                                    <p className="text-gray-600 leading-relaxed">
-                                        {value.description}
-                                    </p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-
-                {/* Team Section */}
-                <section className="py-16 bg-gray-50">
-                    <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-                        <div className="text-center mb-12">
-                            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                                Nossa Equipe
-                            </h2>
-                            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-                                Profissionais dedicados a fazer a diferença no seu negócio
-                            </p>
-                        </div>
-                        <div className="grid md:grid-cols-3 gap-8">
-                            {team.map((member, idx) => (
-                                <div key={idx} className="bg-white p-8 rounded-xl border border-gray-200 text-center hover:shadow-lg transition-shadow duration-300">
-                                    <div className="w-20 h-20 bg-gradient-to-br from-[#9d670c] to-[#7a5009] rounded-full mx-auto mb-4 flex items-center justify-center">
-                                        <svg className="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                                        </svg>
-                                    </div>
-                                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                                        {member.name}
-                                    </h3>
-                                    <p className="text-[#9d670c] font-medium mb-3">
-                                        {member.role}
-                                    </p>
-                                    <p className="text-gray-600 leading-relaxed">
-                                        {member.description}
-                                    </p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-
-                {/* Technology Section */}
-                <section className="py-16 md:py-20">
-                    <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-                        <div className="bg-gradient-to-br from-[#9d670c] to-[#7a5009] rounded-2xl p-8 md:p-12 text-white">
-                            <div className="max-w-3xl mx-auto text-center">
-                                <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                                    Tecnologia de Ponta
+                        <div className="bg-gradient-to-br from-primary-600 to-primary-800 rounded-2xl p-8 md:p-12 text-white text-center">
+                            <h2 className="text-3xl md:text-4xl font-bold mb-8">
+                                Nosso Propósito
                                 </h2>
-                                <p className="text-xl leading-relaxed mb-8 text-white/90">
-                                    Utilizamos as mais recentes tecnologias em automação, inteligência artificial e integração de sistemas para oferecer uma plataforma robusta, segura e em constante evolução.
+                            <p className="text-xl leading-relaxed mb-8 text-white/90 max-w-3xl mx-auto">
+                                Facilitar a vida do profissional da saúde, para que ele possa alcançar mais resultados, mais lucro e mais <span className="font-bold text-white">Qualidade de Vida</span>.
                                 </p>
-                                <div className="grid md:grid-cols-3 gap-6 text-left">
+                            
+                            <div className="grid md:grid-cols-3 gap-6 mt-12">
                                     <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-                                        <h3 className="font-semibold text-lg mb-2">Integração Fácil</h3>
+                                    <div className="text-3xl mb-4">📈</div>
+                                    <h3 className="font-semibold text-lg mb-2">Mais Resultados</h3>
                                         <p className="text-white/80 text-sm">
-                                            Conecte-se aos principais ERPs e sistemas de gestão do mercado
+                                        Ferramentas que potencializam o crescimento do seu negócio
                                         </p>
                                     </div>
                                     <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-                                        <h3 className="font-semibold text-lg mb-2">Segurança Total</h3>
+                                    <div className="text-3xl mb-4">💰</div>
+                                    <h3 className="font-semibold text-lg mb-2">Mais Lucro</h3>
                                         <p className="text-white/80 text-sm">
-                                            Criptografia de dados e conformidade com LGPD
+                                        Precificação estratégica que maximiza sua rentabilidade
                                         </p>
                                     </div>
                                     <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-                                        <h3 className="font-semibold text-lg mb-2">Disponibilidade 24/7</h3>
+                                    <div className="text-3xl mb-4">🌟</div>
+                                    <h3 className="font-semibold text-lg mb-2">Mais QV</h3>
                                         <p className="text-white/80 text-sm">
-                                            Infraestrutura cloud com alta disponibilidade
+                                        Tempo livre para focar no que realmente importa
                                         </p>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -254,28 +105,32 @@ export default function About() {
                 <section className="py-16 bg-gray-50">
                     <div className="max-w-screen-xl mx-auto px-4 md:px-8 text-center">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                            Pronto para Começar?
+                            Conheça Mais Sobre o Grupo QV
                         </h2>
                         <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-                            Junte-se a centenas de empresas que já transformaram sua gestão de cobranças com a QV Business Solution
+                            Descubra todas as soluções que desenvolvemos para facilitar a gestão da sua clínica ou consultório
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                             <Link 
                                 href="/#precos" 
-                                className="inline-flex items-center gap-2 px-8 py-4 text-white font-medium rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
-                                style={{backgroundColor: '#9d670c'}}
+                                className="inline-flex items-center gap-2 px-8 py-4 text-white bg-primary-800 hover:bg-primary-700 font-medium rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
                             >
-                                Ver Planos e Preços
+                                Ver Planos QV Precifica
                                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                                 </svg>
                             </Link>
-                            <Link 
-                                href="/#duvidas" 
-                                className="inline-flex items-center gap-2 px-8 py-4 bg-white text-gray-700 font-medium rounded-lg border-2 border-gray-300 hover:border-[#9d670c] hover:text-[#9d670c] transition-all duration-300"
+                            <a 
+                                href="https://instagram.com/qvconsultoriafinanceira"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 px-8 py-4 bg-white text-gray-700 font-medium rounded-lg border-2 border-gray-300 hover:border-primary-800 hover:text-primary-800 transition-all duration-300"
                             >
-                                Saiba Mais
-                            </Link>
+                                @qvconsultoriafinanceira
+                                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </section>
@@ -284,7 +139,7 @@ export default function About() {
                 <div className="max-w-screen-xl mx-auto px-4 md:px-8 py-8">
                     <Link 
                         href="/" 
-                        className="inline-flex items-center text-[#9d670c] hover:text-[#7a5009] font-medium"
+                        className="inline-flex items-center text-primary-800 hover:text-primary-700 font-medium"
                     >
                         <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
