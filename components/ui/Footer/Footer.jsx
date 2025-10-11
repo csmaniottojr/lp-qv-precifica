@@ -8,7 +8,7 @@ const Footer = () => {
             name: 'Termos de Uso'
         },
         {
-            href: '/privacy-policy',
+            href: '/politica-de-privacidade',
             name: 'Política de Privacidade'
         },
     ]
