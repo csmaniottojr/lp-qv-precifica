@@ -36,7 +36,7 @@ const WhatsAppCTA = () => {
                         </ul>
 
                         <a
-                            href="https://wa.me/5555484042838?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20QV%20Precifica"
+                            href="https://wa.me/55484042838?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20QV%20Precifica"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-3 px-8 py-4 bg-green-500 text-white font-semibold rounded-xl shadow-lg hover:bg-green-600 hover:shadow-xl transition-all duration-300 transform hover:scale-105"

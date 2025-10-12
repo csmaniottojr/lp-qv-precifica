@@ -96,7 +96,7 @@ export default function PurchaseConfirmed() {
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <a
-                                    href="https://wa.me/5511999999999"
+                                    href="https://wa.me/55484042838?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20QV%20Precifica"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 px-8 py-4 bg-green-500 text-white font-medium rounded-lg shadow-md hover:shadow-lg hover:bg-green-600 transition-all duration-300"

@@ -209,7 +209,7 @@ const Pricing = () => {
                                         </a>
                                     ) : (
                                         <a 
-                                            href="https://wa.me/5555484042838?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20QV%20Precifica"
+                                            href="https://wa.me/55484042838?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20QV%20Precifica"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className={`px-6 py-4 rounded-xl w-full font-bold text-base duration-300 transform hover:-translate-y-0.5 text-center ${
