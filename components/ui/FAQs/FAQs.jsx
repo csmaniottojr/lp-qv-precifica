@@ -49,40 +49,32 @@ const FAQs = () => {
 
     const faqsList = [
         {
-            q: "Como o QV Precifica é diferente de usar planilhas?",
-            a: "Planilhas precisam de atualização manual e quebram facilmente. No QV Precifica, quando você muda um custo, o sistema recalcula TODOS os procedimentos automaticamente em cascata. Economize 10-15 horas por mês que gastaria atualizando planilhas."
+            q: "Quanto tempo levo para ter os primeiros resultados?",
+            a: "Nas primeiras horas você já descobre o valor real da hora clínica e identifica procedimentos com preço errado. Em 30 dias você tem clareza financeira total e preços ajustados. Em 90 dias, clientes reportam aumento significativo de margem."
         },
         {
             q: "Funciona para minha especialidade?",
-            a: "Sim! O sistema é flexível e funciona para qualquer área da saúde: dentistas, médicos de todas especialidades, harmonização facial, fisioterapia, nutrição, psicologia. Você cadastra seus procedimentos específicos e personaliza conforme sua realidade."
+            a: "Sim! O sistema é flexível e funciona para qualquer área da saúde: médicos de todas especialidades, dentistas, harmonização facial, fisioterapia, nutrição, fonoaudiologia, psicologia, etc. Você cadastra seus procedimentos e personaliza conforme sua realidade."
+        },
+        {
+            q: "Funciona para quem é profissional individual?",
+            a: "Sim! Mesmo que você não tenha parceiros na sua clínica, você pode usar o QV Precifica para precificar seus procedimentos e simular o preço dentro da margem de lucro que você deseja."
         },
         {
             q: "Preciso ter conhecimento técnico de precificação?",
             a: "Não! O sistema faz os cálculos complexos por você. Você só precisa cadastrar seus custos (que você já conhece) e o sistema calcula automaticamente hora clínica, margens e preços ideais. No plano Ouro, ainda tem onboarding personalizado para te guiar."
         },
         {
-            q: "Quanto tempo levo para ter os primeiros resultados?",
-            a: "Nas primeiras horas você já descobre o valor real da hora clínica e identifica procedimentos com preço errado. Em 30 dias você tem clareza financeira total e preços ajustados. Em 90 dias, clientes reportam aumento significativo de margem."
-        },
-        {
-            q: "E se eu mudar um custo, preciso refazer tudo?",
-            a: "Não! Essa é a grande vantagem. Mudou aluguel, salário ou custo de material? O sistema recalcula automaticamente TODOS os procedimentos. É a atualização em cascata que economiza horas de trabalho manual."
-        },
-        {
-            q: "O que é o Simulador Atual vs Ideal?",
-            a: "É a funcionalidade estrela. Você vê lado a lado: quanto você cobra hoje vs quanto deveria cobrar para ter a margem desejada. Mostra exatamente quanto você está perdendo em cada procedimento e permite simular ajustes antes de implementar."
-        },
-        {
             q: "Qual plano escolher?",
-            a: "Prata: se você quer as funcionalidades completas e prefere configurar sozinho. Ouro (mais popular): se quer onboarding personalizado e suporte para implementar mais rápido. Diamante: para redes com múltiplas unidades que precisam de diagnóstico financeiro completo."
+            a: "Prata: se você quer as funcionalidades completas e prefere configurar sozinho. Ouro (mais popular): se quer onboarding personalizado e suporte para implementar mais rápido. Diamante: para redes de clínicas que precisam gerenciar a precificação de múltiplas unidades."
         },
         {
-            "q": "Posso exportar meus dados?",
-            "a": "Sim! Você pode exportar seus procedimentos e preços em planilha Excel a qualquer momento. Os dados são seus e podem ser usados onde quiser."
+            "q": "Já tenho meus procedimentos cadastrados em outro sistema, preciso cadastrar tudo de novo?",
+            "a": "Não! Você pode importar seus procedimentos e preços em planilha Excel a qualquer momento. Após ajustar os preços, você pode exportar para Excel novamente e atualizar os seus sistemas."
           },
           {
             "q": "Tem alguma garantia?",
-            "a": "Claro que sim! Queremos que você use nossa plataforma com total tranquilidade e confiança. Você tem 7 dias de garantia incondicional. Se por qualquer motivo você decidir que nossa solução não é para você, devolvemos 100% do seu investimento, sem perguntas, sem burocracia."
+            "a": "Queremos que você use nossa plataforma com total tranquilidade e confiança. Você tem 7 dias de garantia incondicional. Se por qualquer motivo você decidir que nossa solução não é para você, devolvemos 100% do seu investimento, sem perguntas, sem burocracia."
           }
     ]
   

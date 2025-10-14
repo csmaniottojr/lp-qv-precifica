@@ -29,6 +29,7 @@ const Pricing = () => {
                 "Procedimentos Ilimitados",
                 "Importação e exportação de dados",
                 "Suporte personalizado via WhatsApp",
+                "Atualizações e melhorias constantes",
             ],
         },
         {
