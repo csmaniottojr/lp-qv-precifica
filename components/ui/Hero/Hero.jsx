@@ -1,6 +1,5 @@
 import Image from "next/image"
 import NavLink from "../NavLink"
-import HeroImg from "@/public/images/simulador.png"
 import LayoutEffect from "@/components/LayoutEffect"
 
 const Hero = () => (
@@ -43,11 +42,11 @@ const Hero = () => (
                         </div>
                     </div>
                     <div className="mt-12 sm:mt-16 flex justify-center">
-                        <div className="relative">
+                        <div className="relative w-full max-w-6xl">
                             <div className="absolute inset-0 bg-primary-200 blur-3xl opacity-30 rounded-full"></div>
-                            <Image
-                                src={HeroImg}
-                                className="relative shadow-2xl rounded-2xl max-w-3xl border border-gray-200"
+                            <img
+                                src="/images/simulador.png"
+                                className="relative shadow-2xl rounded-2xl w-full h-auto border border-gray-200"
                                 alt="QV Precifica - Software de Precificação Estratégica"
                             />
                         </div>
