@@ -22,12 +22,13 @@ const Pricing = () => {
                 paymentLink: "https://www.asaas.com/c/yf5r2cmpzmp7b5lg"
             },
             features: [
+                "Simulador de precificação Atual vs Ideal",
                 "Cadastro de Custos Fixos e Variáveis",
                 "Cálculo Automático de Hora Clínica",
                 "Configuração de Margens de Lucro",
-                "Simulador Atual vs Ideal",
                 "Procedimentos Ilimitados",
-                "Suporte via WhatsApp",
+                "Importação e exportação de dados",
+                "Suporte personalizado via WhatsApp",
             ],
         },
         {
@@ -48,7 +49,6 @@ const Pricing = () => {
                 "Todas as funcionalidades do Prata",
                 "Onboarding Personalizado 1:1",
                 "Sessão de Configuração Guiada",
-                "Suporte Prioritário",
             ],
         },
         {

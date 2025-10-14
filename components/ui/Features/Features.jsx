@@ -7,6 +7,14 @@ const Features = () => {
         {
             icon:
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                </svg>,
+            title: "Simulador de precificação",
+            desc: "Compare o que você cobra hoje com o que deveria cobrar para a margem desejada. Simule com diferentes margens e formas de repasse para parceiros."
+        },
+        {
+            icon:
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
                 </svg>,
             title: "Cadastro de Custos",
@@ -32,14 +40,6 @@ const Features = () => {
         {
             icon:
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
-                </svg>,
-            title: "Simulador Atual vs Ideal ⭐",
-            desc: "Compare o que você cobra hoje com o que deveria cobrar para margem desejada. Veja quanto está perdendo em cada procedimento."
-        },
-        {
-            icon:
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
                 </svg>,
             title: "Cadastro de Procedimentos",
@@ -50,8 +50,8 @@ const Features = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
                 </svg>,
-            title: "Atualização Automática",
-            desc: "Mudou um custo? Sistema recalcula tudo automaticamente. Atualização em cascata de todos os procedimentos, sem trabalho manual."
+            title: "Importação e exportação de dados",
+            desc: "Não tenha retrabalho para usar o simulador. Importe seus dados de outras planilhas/sistemas, ajuste os preços e em seguida exporte para Excel."
         },
 
     ]
@@ -74,7 +74,7 @@ const Features = () => {
                             Tudo que você precisa para precificar corretamente
                         </h2>
                         <p className="mt-5 text-lg text-gray-600 leading-relaxed">
-                        Não é um curso, não é uma planilha. É um sistema inteligente que faz o trabalho pesado por você, mostrando exatamente onde você está e onde deveria estar.
+                        Não é um curso, não é uma planilha. É um sistema inteligente que faz todos os cálculos por você, mostrando exatamente onde você está e onde deveria estar.
                         </p>
                     </div>
                 </LayoutEffect>
