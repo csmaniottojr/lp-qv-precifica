@@ -4,7 +4,7 @@ import Button from "../Button";
 import { useState } from "react";
 
 const Pricing = () => {
-    const [billingType, setBillingType] = useState("yearly"); // "yearly" or "yearly-installments"
+    const [billingType, setBillingType] = useState("yearly-installments"); // "yearly" or "yearly-installments"
 
     const plans = [
         {
@@ -22,6 +22,7 @@ const Pricing = () => {
                 paymentLink: "https://www.asaas.com/c/yf5r2cmpzmp7b5lg"
             },
             features: [
+                "1 ano de acesso",
                 "Simulador de precificação Atual vs Ideal",
                 "Cadastro de Custos Fixos e Variáveis",
                 "Cálculo Automático de Hora Clínica",
@@ -95,16 +96,7 @@ const Pricing = () => {
                 {/* Billing Type Selector */}
                 <div className="mt-8 flex justify-center">
                     <div className="bg-gray-100 p-1 rounded-lg flex">
-                        <button
-                            onClick={() => setBillingType("yearly")}
-                            className={`px-6 py-2 rounded-md text-sm font-medium transition-all duration-200 relative ${
-                                billingType === "yearly"
-                                    ? "bg-white text-gray-900 shadow-sm"
-                                    : "text-gray-600 hover:text-gray-900"
-                            }`}
-                        >
-                            Anual
-                        </button>
+                        
                         <button
                             onClick={() => setBillingType("yearly-installments")}
                             className={`px-6 py-2 rounded-md text-sm font-medium transition-all duration-200 ${
@@ -114,6 +106,16 @@ const Pricing = () => {
                             }`}
                         >
                             Anual Parcelado
+                        </button>
+                        <button
+                            onClick={() => setBillingType("yearly")}
+                            className={`px-6 py-2 rounded-md text-sm font-medium transition-all duration-200 relative ${
+                                billingType === "yearly"
+                                    ? "bg-white text-gray-900 shadow-sm"
+                                    : "text-gray-600 hover:text-gray-900"
+                            }`}
+                        >
+                            Anual
                         </button>
                     </div>
                 </div>
