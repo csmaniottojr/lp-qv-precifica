@@ -36,7 +36,7 @@ const Dores = () => {
                     </h2>
                     <p className="text-lg text-gray-600">
                     Você se dedica, atende dezenas de pacientes, mas no fim do mês o lucro não acompanha o esforço.
-                    A verdade é que o problema não está na quantidade de pacientes — está na forma como você precifica.
+                    <strong> A verdade é que o problema não está na quantidade de pacientes — está na forma como você precifica.</strong>
                     </p>
                 </div>
                 <div className="mt-10">

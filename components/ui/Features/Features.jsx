@@ -71,7 +71,7 @@ const Features = () => {
                             Funcionalidades Principais
                         </div>
                         <h2 className="text-gray-900 text-4xl font-bold sm:text-5xl">
-                            Tudo que você precisa para precificar corretamente
+                            Tudo que você precisa para precificar corretamente e de forma fácil
                         </h2>
                         <p className="mt-5 text-lg text-gray-600 leading-relaxed">
                         Não é um curso, não é uma planilha. É um sistema inteligente que faz todos os cálculos por você, mostrando exatamente onde você está e onde deveria estar.
