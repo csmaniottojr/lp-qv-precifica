@@ -32,23 +32,30 @@ const Founder = () => {
                     <div className="max-w-6xl mx-auto">
                         <div className="grid lg:grid-cols-2 gap-12 items-center">
                             {/* Coluna esquerda - Resumo */}
-                            <div className="space-y-6">
-                                <div>
-                                    <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                            <div className="space-y-8">
+                                <div className="relative">
+                                    <div className="absolute -left-4 top-0 w-1 h-16 bg-gradient-to-b from-primary-400 to-primary-600 rounded-full"></div>
+                                    <h3 className="text-3xl font-bold text-gray-900 mb-2">
                                         Jaci Kons
                                     </h3>
-                                    <p className="text-gray-600 leading-relaxed mb-4">
-                                    Fundador do Grupo QV, trabalho há mais de 10 anos ajudando profissionais da saúde a transformarem sua gestão financeira.
-                                    </p>
-                                    <p className="text-gray-600 leading-relaxed mb-4">
-                                    Durante anos atendendo clínicas de diferentes especialidades, percebi um padrão: profissionais talentosos que não sabiam precificar corretamente. Planilhas complicadas, achismo nos 
-preços e lucros abaixo do esperado.
-                                    </p>
-                                    <p className="text-gray-600 leading-relaxed mb-4">
-                                    Criei o QV Precifica para resolver isso. É a mesma metodologia que aplico pessoalmente nas consultorias — testada, validada e que já ajudou centenas de profissionais a precificar com clareza e aumentar suas margens.
+                                    <p className="text-primary-600 font-semibold text-lg mb-6">
+                                        Fundador do Grupo QV
                                     </p>
                                 </div>
                                 
+                                <div className="space-y-6">
+                                    <p className="text-gray-600 leading-relaxed text-lg">
+                                    A QV foi criada por Jaci Kons, profissional com mais de 10 anos de experiência no mercado financeiro e que ajudou a transformar a gestão financeira de centenas de profissionais da saúde.
+                                    </p>
+                                    
+                                    <p className="text-gray-600 leading-relaxed text-lg">
+                                        Durante anos atendendo clínicas de diferentes especialidades, ele percebeu um padrão: <span className="font-semibold text-gray-800">profissionais talentosos que não sabiam precificar corretamente</span>. Planilhas complicadas, achismo nos preços e lucros abaixo do esperado.
+                                    </p>
+                                    <p className="text-gray-600 leading-relaxed text-lg">
+                                    O <span className="font-bold text-primary-700">QV Precifica</span> foi criado para resolver isso. É a mesma metodologia aplicada pessoalmente nas consultorias — <span className="font-semibold text-primary-800">testada, validada</span> e que já ajudou centenas de profissionais da saúde a precificar com clareza e aumentar suas margens.
+                                    </p>
+
+                                </div>
                                 
                             </div>
                             
