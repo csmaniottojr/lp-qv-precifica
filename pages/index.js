@@ -1,6 +1,7 @@
 import CTA from "@/components/ui/CTA";
 import FAQs from "@/components/ui/FAQs";
 import Features from "@/components/ui/Features";
+import Founder from "@/components/ui/Founder";
 import Hero from "@/components/ui/Hero";
 import Pricing from "@/components/ui/Pricing";
 import Dores from "@/components/ui/Dores";
@@ -17,6 +18,7 @@ export default function Home() {
       <CTA />
       <Testimonial />
       <Pricing />
+      <Founder />
       <FAQs />
       <WhatsAppCTA />
     </>
