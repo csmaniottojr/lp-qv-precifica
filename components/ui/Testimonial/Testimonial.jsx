@@ -12,7 +12,7 @@ const Testimonial = () => {
         {
             name: "Dra Ana Carolina Dutra",
             title: "Cardiologista - CardioCare",
-            quote: "O ranking de rentabilidade me mostrou que 3 procedimentos estavam dando prejuízo! Ajustei os preços e agora todos os atendimentos são lucrativos. Resultado imediato."
+            quote: "Antes gastava 4 horas toda semana ajustando planilhas de custos. Agora aumento meu lucro em 10 minutos simulando qualquer cenário. Recuperei meus finais de semana e minha margem."
         },
         {
             name: "Dr. Lucas Martins",

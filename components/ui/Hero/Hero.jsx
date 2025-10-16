@@ -17,10 +17,10 @@ const Hero = () => (
                             Exclusivo para clínicas e consultórios
                         </div>
                         <h1 className="text-4xl text-gray-900 font-extrabold mx-auto leading-tight sm:text-5xl lg:text-6xl">
-                        Aumente seu lucro precificando corretamente, de forma fácil e prática
+                        Aumente seu lucro precificando corretamente, de forma fácil e rápida
                         </h1>
                         <p className="max-w-2xl mx-auto text-xl text-gray-600 leading-relaxed">
-                            Mapeie seus custos, simule margens e defina preços lucrativos em minutos. Software completo de precificação para médicos, dentistas e profissionais da saúde
+                            Mapeie seus custos, simule margens e defina preços lucrativos sem sacrificar seu tempo livre. Para médicos, dentistas e profissionais da saúde que querem dormir tranquilos sabendo que estão lucrando.
                         </p>
                         <div className="flex flex-col sm:flex-row justify-center items-center font-medium text-base gap-4 pt-4">
                             <NavLink

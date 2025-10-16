@@ -23,7 +23,15 @@ const Dores = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
                 </svg>,
             title: "Insegurança e conflito sobre valores",
-            desc: "Você sente medo de ajustar preços e perder pacientes. Os sócios discutem margens, mas ninguém tem números concretos. O resultado? Incerteza, tensão e decisões baseadas em opinião, não em fatos."
+            desc: "Você não tem clareza se seus preços estão corretos e isso gera ansiedade constante. Discussões sobre valores viram fonte de estresse porque ninguém tem números concretos para se basear. O resultado? Incerteza, tensão e decisões baseadas em opinião, não em fatos."
+        },
+        {
+            icon:
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+                </svg>,
+            title: "Finais de semana perdidos com planilhas",
+            desc: "Você chega em casa exausto, mas ainda precisa atualizar custos, refazer cálculos e tentar descobrir se os preços estão certos. Horas preciosas que poderiam ser com a família viram maratonas de Excel que nunca terminam. Seu tempo livre vale mais que isso."
         },
     ]
 
@@ -40,7 +48,7 @@ const Dores = () => {
                     </p>
                 </div>
                 <div className="mt-10">
-                    <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
                         {
                             features.map((item, idx) => (
                                 <li key={idx} className="group relative p-8 bg-white border border-gray-200 rounded-2xl hover:border-primary-300 hover:shadow-xl transition-all duration-300">
