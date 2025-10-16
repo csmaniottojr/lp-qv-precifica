@@ -20,7 +20,7 @@ const Hero = () => (
                         Aumente seu lucro precificando corretamente, de forma fácil e rápida
                         </h1>
                         <p className="max-w-2xl mx-auto text-xl text-gray-600 leading-relaxed">
-                            Mapeie seus custos, simule margens e defina preços lucrativos sem sacrificar seu tempo livre. Para médicos, dentistas e profissionais da saúde que querem dormir tranquilos sabendo que estão lucrando.
+                            Mapeie seus custos, simule margens e defina preços certeiros sem sacrificar seu tempo livre. Para médicos, dentistas e profissionais da saúde que querem dormir tranquilos sabendo que estão lucrando.
                         </p>
                         <div className="flex flex-col sm:flex-row justify-center items-center font-medium text-base gap-4 pt-4">
                             <NavLink
