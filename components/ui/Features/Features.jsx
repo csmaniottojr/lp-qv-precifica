@@ -10,7 +10,7 @@ const Features = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
                 </svg>,
             title: "Simulador de precificação",
-            desc: "Compare o que você cobra hoje com o que deveria cobrar para a margem desejada. Simule com diferentes margens e formas de repasse para parceiros."
+            desc: "Compare o que você cobra hoje com o que deveria cobrar para a margem desejada em segundos. Simule com diferentes margens e formas de repasse para parceiros."
         },
         {
             icon:
